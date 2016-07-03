@@ -7,8 +7,8 @@ export class App {
   configureRouter(config: RouterConfiguration, router: Router) {
     config.title = 'Programmer Per';
     config.map([
-      { route: ['', 'welcome'], name: 'welcome',      moduleId: './welcome',      nav: true, title: 'Welcome' },
-      { route: 'cv',            name: 'cv',           moduleId: './cv',           nav: true, title: 'CV' },      
+      // { route: ['', 'welcome'], name: 'welcome',      moduleId: './welcome',      nav: true, title: 'Welcome' },
+      { route: ['', 'cv'],        name: 'cv',           moduleId: './cv',           nav: true, title: 'CV' },      
     ]);
 
     this.router = router;

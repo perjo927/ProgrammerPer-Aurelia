@@ -22,6 +22,7 @@
 
         <section class="flex">
             <div>
+                <!-- TODO: Markdown support -->
                 <p>
                     > Hello world, I am <b>Per</b>: a programmer.
                 </p>
@@ -50,8 +51,8 @@
                 </p>
             </div>
 
-
-            <img class="profile-pic" src="http://www150.lunapic.com/editor/working/14674943284638?8342339979">
+            <!-- TODO: Fetch -->
+            <img class="profile-pic" src="../static/per.jpg">
 
         </section>
 
@@ -61,44 +62,15 @@
         </h2>
         <section>
             <ul class="flex">
-                <li>
-                    <img src="http://slottournamentsonline.com/wp-content/uploads/2014/12/betsson_logo_lcb-40x40.png">
-                    <h3>Web Developer</h3>
-
-                    <b>2015/16</b> Sportsbook
-                    <br> 3 Mobile Web Sites
-                    <br> 3 Desktop Web Sites
-                </li>
-                <li>
-                    <img src="http://slottournamentsonline.com/wp-content/uploads/2014/12/betsson_logo_lcb-40x40.png">
-                    <h3>Trainee</h3>
-
-                    <b>2014</b> Scrum Dashboard
-                    <br> Live Casino Lobby Prototype
-                    <br> Game Management Tool
-                </li>
-                <li>
-                    <img src="http://www.myiconfinder.com/uploads/iconsets/48-48-c1752989d5b799e7bb9ae84446d47ebd-Ericsson.png">
-                    <h3>Ericsson</h3>
-
-                    <b>2014</b> Thesis: Web Surveys
-                    <br> Work Enviroment Web Poll App
-                </li>
-                <li>
-                    <img src="http://tryckbar.se/wp-content/themes/tryckbar1415/img/logos/lith-logotype.png">
-                    <h3>Link&ouml;ping Uni</h3>
-
-                    <b>2013/14</b> Programming Tutor
-                    <br> Web Course Provider
+                <li repeat.for="item of work">
+                    <img src.bind="'../static/' + item.image" />
+                    <h3>${item.title}</h3>
+                    <b>${item.year}</b>
+                    <span repeat.for="a of item.achievements">
+                        ${a}
+                    </span>
                 </li>
 
-                <li>
-                    <img src="http://coderdojonkpg.se/img/coderowl.png">
-                    <h3>Coach</h3>
-
-                    <b>2014</b> CoderDojo NKPG
-                    <br> Programming Tutoring
-                </li>
             </ul>
         </section>
 
