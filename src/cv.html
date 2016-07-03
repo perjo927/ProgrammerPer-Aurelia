@@ -130,34 +130,11 @@
         <h2>Education</h2>
         <section>
             <ul class="flex">
-                <li>
-                    <img src="http://c.vitkor.se/ip/vote_1.png">
-                    <h3>Innovative Programming </h3>
-                    <b>120 hp</b> Linkoping University BSc
-                </li>
-
-                <li>
-                    <img src="https://pbs.twimg.com/profile_images/572800453/clogo_colour_400x400.png">
-                    <h3>Information Retrieval </h3>
-                    <b>15 hp</b> Linkoping University
-                </li>
-
-                <li>
-                    <img src="http://cliparts.co/cliparts/dT9/K6d/dT9K6dx6c.gif">
-                    <h3>Music Producer Programme</h3>
-                    <b>150 hp</b> Linkoping University BSc
-                </li>
-
-                <li>
-                    <img src="http://tryckbar.se/wp-content/themes/tryckbar1415/img/logos/lith-logotype.png">
-                    <h3>Linguistic Science</h3>
-                    <b>30 hp</b> Linkoping University
-                </li>
-                <li>
-                    <img src="http://tryckbar.se/wp-content/themes/tryckbar1415/img/logos/lith-logotype.png">
-                    <h3>Media & Communication</h3>
-                    <b>30 hp</b> Linkoping University
-                </li>
+                <li repeat.for="e of education">
+                    <img src.bind="'../static/' + e.image">
+                    <h3>${e.title}</h3>
+                    <b>${e.points}</b>${e.description}
+                </li>               
             </ul>
         </section>
 

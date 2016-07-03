@@ -255,10 +255,34 @@ export class Cv {
 
     education: any = [
         {
-            img: "",
-            title: "",
-            points: "",
-            description: ""
+            image: "vote_1.png",
+            title: "Innovative Programming",
+            points: "120 hp",
+            description: "Linkoping University BSc"
+        },
+        {
+            image: "c_logo.png",
+            title: "Information Retrieval",
+            points: "15 hp",
+            description: "Linkoping University"
+        },
+        {
+            image: "mupp.gif",
+            title: "Music Producer Programme",
+            points: "150 hp",
+            description: "Linkoping University BSc"
+        },
+        {
+            image: "liu_logo.png",
+            title: "Linguistic Science",
+            points: "30 hp",
+            description: "Linkoping University"
+        },
+        {
+            image: "liu_logo.png",
+            title: "Media & Communication",
+            points: "30hp",
+            description: "Linkoping University"
         }
     ];
 
