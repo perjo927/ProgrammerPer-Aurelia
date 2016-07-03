@@ -1,0 +1,19 @@
+<template bindable="router">
+  <nav role="navigation">
+    <div>
+      <a href="#">
+        <i class="fa fa-home"></i>
+        <span>${router.title}</span>
+      </a>
+    </div>
+
+    <div>
+      <ul class="nav-item">
+        <li repeat.for="row of router.navigation" class="${row.isActive ? 'active' : ''}">
+          <a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" href.bind="row.href">${row.title}</a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+</template>
