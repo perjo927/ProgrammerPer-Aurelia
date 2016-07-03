@@ -16,6 +16,8 @@ export class Cv {
     Now working in a B2B site team at Betsson where we improved our mobile web sites and the desktop sites as well as the sportsbook product.
   `;
 
+    profile: string = "per.jpg";
+
     work: any = [
         {
             image: "betsson_logo.png",
@@ -28,7 +30,7 @@ export class Cv {
             ]
         },
         {
-            image: "betsson_logo.png",            
+            image: "betsson_logo.png",
             title: "Trainee",
             year: "2014",
             achievements: [
@@ -58,7 +60,7 @@ export class Cv {
         {
             image: "coderowl.png",
             title: "Coach",
-            year: "2014",
+            year: "2013/14",
             achievements: [
                 "CoderDojo NKPG",
                 "Programming Tutoring"
@@ -68,16 +70,145 @@ export class Cv {
 
     skills: any = [
         {
-            skill: "",
-            level: ""
+            list: [
+                {
+                    skill: "JavaScript",
+                    level: 5
+                },
+                {
+                    skill: "TypeScript",
+                    level: 4
+                },
+                {
+                    skill: "TDD",
+                    level: 3
+                },
+                {
+                    skill: "MongoDB",
+                    level: 2
+                },
+                {
+                    skill: "SVN",
+                    level: 1
+                }
+            ]
+        },
+        {
+            list: [
+                {
+                    skill: "HTML/CSS",
+                    level: 5
+                },
+                {
+                    skill: "Git / GitFlow",
+                    level: 4
+                },
+                {
+                    skill: "Continous Integration",
+                    level: 3
+                },
+                {
+                    skill: "Python",
+                    level: 2
+                },
+                {
+                    skill: "IIS",
+                    level: 1
+                }
+            ]
+        },
+        {
+            list: [
+                {
+                    skill: "Angular",
+                    level: 5
+                },
+                {
+                    skill: ".NET",
+                    level: 4
+                },
+                {
+                    skill: "Node.js",
+                    level: 3
+                },
+                {
+                    skill: "Ruby",
+                    level: 2
+                },
+                {
+                    skill: "Hardware",
+                    level: 1
+                }
+            ]
+        },
+        {
+            list: [
+                {
+                    skill: "Meteor",
+                    level: 5
+                },
+                {
+                    skill: "C#",
+                    level: 4
+                },
+                {
+                    skill: "Selenium",
+                    level: 3
+                },
+                {
+                    skill: "C++",
+                    level: 2
+                },
+                {
+                    skill: "SQL",
+                    level: 1
+                }
+            ]
         }
     ];
 
     projects: any = [
         {
-            title: "",
-            description: "",
-            image: ""
+            title: "This CV",
+            description: "An app made with Aurelia",
+            image: "",
+            link: ""
+        },
+        {
+            title: "CSS Guidelines",
+            description: "Summary of CSS architecture philosoph",
+            image: "",
+            link: ""
+        },
+        {
+            title: "CasinoMetropol Mobile",
+            description: "A casino site co-produced @Betsson",
+            image: "",
+            link: ""
+        },
+        {
+            title: "<3",
+            description: "My own programmming language",
+            image: "",
+            link: ""
+        },
+        {
+            title: "Ericsson Web Poll",
+            description: "Web survey admin GUI created @Ericsson",
+            image: "",
+            link: "ericsson-rec.jpg"
+        },
+        {
+            title: "Angular 2 & ASP.NET Beta ",
+            description: "My research on Angular 2 / ASP.NET RC:s",
+            image: "",
+            link: ""
+        },
+        {
+            title: "Yellow Danger Brewery",
+            description: "A web site made for NKPG brewery",
+            image: "",
+            link: ""
         }
     ];
 
