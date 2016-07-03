@@ -1,3 +1,5 @@
+// TODO: Split up, refactor, use partials
+
 $material_white: #fff;
 $material_black: #000;
 
@@ -66,6 +68,30 @@ $primary_font: 'Press Start 2P';
 $secondary_font: cursive;
 $tertiary_font: 'Open Sans';
 
+// keyframes 
+@keyframes pulsate {
+  0% { 
+    opacity: 0.2;
+  }
+  25% { 
+    opacity: 0.5;
+  }
+  50% { 
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.6; 
+  }
+  100% {
+    opacity: 0.3; 
+  }
+}
+
+.pulse {
+  -webkit-animation: pulsate 5s infinite; 
+  animation:         pulsate 5s infinite; 
+}
+
 //@extend-elements
 %ribbon_extension {
   content: '';
@@ -94,7 +120,8 @@ $tertiary_font: 'Open Sans';
 h1 {
   font-size: 10px;
 }
-h3, h4, h5, h6 {
+
+h2, h3, h4, h5, h6 {
   font-family: $primary_font, $secondary_font;
   //color: $secondary_text_color;
   color: $quintiary_text_color;
@@ -377,7 +404,6 @@ table {
     background: -webkit-linear-gradient(left, $tertiary_gradient_color 0, $secondary_gradient_color 58%);
     background: linear-gradient(left, $tertiary_gradient_color 0, $secondary_gradient_color 58%);
 
-   font-family: $primary_font, $secondary_font;
     color: $heading_text_color;
     text-align: center;
     text-shadow: 0 0 6px $primary_text_shadow_color;

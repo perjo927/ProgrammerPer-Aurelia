@@ -232,8 +232,24 @@ export class Cv {
 
     competitions: any = [
         {
-            image: "",
-            description: ""
+            image: "money-conf-2016.png",
+            description: "Winner: Open Source Contribution competition",
+            emphasis: "Moneyconf 2016"
+        },
+        {
+            image: "web_summit_logo.jpeg",
+            description: "Winner: Open Source Contribution competition",
+            emphasis: "Web Summit 2016"
+        },
+        {
+            image: "east_hack.jpg",
+            description: "Finalist: of",
+            emphasis: "East Sweden Hack 2014"
+        },
+        {
+            image: "icpc_logo.png",
+            description: "Participant: of",
+            emphasis: "Nordic Collegiate Programming Contest 2013&14"
         }
     ]
 

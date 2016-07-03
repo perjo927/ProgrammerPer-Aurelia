@@ -5,7 +5,7 @@
     <div class="ribbon">
         <div class="title">
             <h1>
-                <pre>
+                <pre class="pulse">
         ______   ______     ______          __     ______     __   __     ______     ______     ______     __   __       
        /\  == \ /\  ___\   /\  == \        /\ \   /\  __ \   /\ "-.\ \   /\  ___\   /\  ___\   /\  __ \   /\ "-.\ \      
        \ \  _-/ \ \  __\   \ \  __<       _\_\ \  \ \ \/\ \  \ \ \-.  \  \ \___  \  \ \___  \  \ \ \/\ \  \ \ \-.  \     
@@ -41,7 +41,7 @@
                 </p>
 
                 <p> With a
-                    <b>Bachelor degree</b> in Programming (and Music Production) from <b>Link&ouml;ping university</b> where
+                    <b>Bachelor degree</b> in Programming (and Music Production) from <b>Linkoping university</b> where
                     I also served as a programming tutor, and a thesis work at <b>Ericsson</b>, my career started at <b>Betsson</b>                    as a trainee, providing the company with some cool tools.
                 </p>
 
@@ -118,27 +118,12 @@
             </h5>
 
             <div class="flex flex-content">
-
-                <div class="list-item">
-                    <img src="http://finnovation.com.br/wp-content/uploads/2015/07/money-conf-2016.png"> Winner: Open Source
-                    Contribution competition <b>Moneyconf 2016</b>
+                <div class="list-item" repeat.for="c of competitions">
+                    <img src.bind="'../static/' + c.image"> 
+                    <!-- TODO: Markdown -->
+                    ${c.description} <b>${c.emphasis}</b>
                 </div>
-
-                <div class="list-item">
-                    <img src="http://irishtechnews.net/ITN3/wp-content/uploads/2015/11/web_summit_logo-512x500.jpeg"> Winner:
-                    Open Source Contribution competition
-                    <b>Web Summit 2016</b>
-                </div>
-
-                <div class="list-item">
-                    <img src="http://swedsoft.se/wp-content/uploads/sites/7/2015/07/East-Sweden-hack.jpg"> Finalist:
-                    <b>East Sweden Hack</b> 2014
-                </div>
-
-                <div class="list-item">
-                    <img src="http://acmgnyr.org/icpclogo_big.png"> Participant:
-                    <b>Nordic Collegiate Programming Contest</b> 2013&14
-                </div>
+            </div>
 
         </section>
 
@@ -148,30 +133,30 @@
                 <li>
                     <img src="http://c.vitkor.se/ip/vote_1.png">
                     <h3>Innovative Programming </h3>
-                    <b>120 hp</b> Link&ouml;ping University BSc
+                    <b>120 hp</b> Linkoping University BSc
                 </li>
 
                 <li>
                     <img src="https://pbs.twimg.com/profile_images/572800453/clogo_colour_400x400.png">
                     <h3>Information Retrieval </h3>
-                    <b>15 hp</b> Link&ouml;ping University
+                    <b>15 hp</b> Linkoping University
                 </li>
 
                 <li>
                     <img src="http://cliparts.co/cliparts/dT9/K6d/dT9K6dx6c.gif">
                     <h3>Music Producer Programme</h3>
-                    <b>150 hp</b> Link&ouml;ping University BSc
+                    <b>150 hp</b> Linkoping University BSc
                 </li>
 
                 <li>
                     <img src="http://tryckbar.se/wp-content/themes/tryckbar1415/img/logos/lith-logotype.png">
                     <h3>Linguistic Science</h3>
-                    <b>30 hp</b> Link&ouml;ping University
+                    <b>30 hp</b> Linkoping University
                 </li>
                 <li>
                     <img src="http://tryckbar.se/wp-content/themes/tryckbar1415/img/logos/lith-logotype.png">
                     <h3>Media & Communication</h3>
-                    <b>30 hp</b> Link&ouml;ping University
+                    <b>30 hp</b> Linkoping University
                 </li>
             </ul>
         </section>
@@ -246,7 +231,7 @@
             Recommendations
         </h2>
         <section>
-            <h6>Betsson: Bj&ouml;rg E</h6>
+            <h6>Betsson: Bjorg E</h6>
             <blockquote>
                 <b>"</b> Always on point, trustworthy and a talented coder, a good team player and easy to work with ...
                 Per rocks! <b>"</b>
@@ -258,7 +243,7 @@
                 we give him excellent recommendations <b>"</b>
             </blockquote>
 
-            <h6>Link&ouml;ping: Hannah B</h6>
+            <h6>Linkoping: Hannah B</h6>
             <blockquote>
                 <b>"</b> Per is one of the most driven, hard-working and sharp person I have worked with. <b>"</b>
             </blockquote>
