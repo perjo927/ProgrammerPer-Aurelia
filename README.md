@@ -4,7 +4,7 @@
 
 This is my CV app, based on __Aurelia__ and the [skeleton](https://github.com/aurelia/skeleton-navigation) app.
 
-[www.programmerper.com](www.programmerper.com)
+[www.programmerper.com](http://www.programmerper.com)
 
 ## Getting started
 
