@@ -170,46 +170,64 @@ export class Cv {
     projects: any = [
         {
             title: "This CV",
-            description: "An app made with Aurelia",
-            image: "",
+            description: "This app, made with Aurelia",
+            image: "qr-pp-aurelia.png",
             link: ""
         },
         {
             title: "CSS Guidelines",
-            description: "Summary of CSS architecture philosoph",
-            image: "",
+            description: "My CSS architecture philosophy",
+            image: "qr-css.png",
             link: ""
         },
         {
-            title: "CasinoMetropol Mobile",
-            description: "A casino site co-produced @Betsson",
-            image: "",
-            link: ""
+            title: "CasinoMetropolMobile",
+            description: "Casino site co-produced @Betsson",
+            image: "qr-cmet.png",
+            link: "https://casino.casinometropolmobile.com/tr/#/"
         },
         {
             title: "<3",
             description: "My own programmming language",
-            image: "",
+            image: "qr-three.png",
             link: ""
         },
         {
             title: "Ericsson Web Poll",
-            description: "Web survey admin GUI created @Ericsson",
-            image: "",
-            link: "ericsson-rec.jpg"
+            description: "Web survey admin for Ericsson",
+            image: "qr-eson-rec.png",
+            link: "../static/ericsson-rec.jpg"
         },
         {
-            title: "Angular 2 & ASP.NET Beta ",
-            description: "My research on Angular 2 / ASP.NET RC:s",
-            image: "",
+            title: "Angular2 & ASP.NET",
+            description: "Research on Angular2/ASP.NET RC",
+            image: "qr-ng2-aspnet.png",
             link: ""
         },
         {
-            title: "Yellow Danger Brewery",
-            description: "A web site made for NKPG brewery",
-            image: "",
+            title: "Yellow D. Brewery",
+            description: "Web site made for NKPG brewery",
+            image: "qr-ydb.png",
             link: ""
-        }
+        },
+        {
+            title: "hWorld",
+            description: "Edu game improved for LiU",
+            image: "qr-hworld.png",
+            link: ""
+        },
+        {
+            title: "East Sweden Hack",
+            description: "Educational Quiz Hack",
+            image: "qr-east-hack.png",
+            link: ""
+        },
+        {
+            title: "PREYBIRD.com",
+            description: "My own music",
+            image: "qr-preybird.png",
+            link: ""
+        },
     ];
 
     competitions: any = [
@@ -230,8 +248,9 @@ export class Cv {
 
     contact: any = [
         {
-            mail: "",
-            phone: ""
+            mail: "djpjgj [at] gmail.com",
+            phone: "SE 76 180 55 94",
+            web: "http://programmerper.com"
         }
     ];
 
