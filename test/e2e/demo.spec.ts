@@ -13,12 +13,12 @@ describe('aurelia skeleton app', function() {
   });
 
   it('should load the page and display the initial page title', () => {
-    expect(po_skeleton.getCurrentPageTitle()).toBe('Welcome | Aurelia');
+    expect(po_skeleton.getCurrentPageTitle()).toBe('Welcome | Programmer Per');
   });
 
-  it('should display greeting', () => {
-    expect(po_welcome.getGreeting()).toBe('Welcome to the Aurelia Navigation App');
-  });
+  // it('should display greeting', () => {
+  //   expect(po_welcome.getGreeting()).toBe('Welcome to Programmer Per');
+  // });
 
   // TODO
 
