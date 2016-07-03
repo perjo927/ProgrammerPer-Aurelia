@@ -153,13 +153,17 @@
                             <td>
                                 <h4>Mail: </h4>
                             </td>
-                            <td>djpjgj (at) gmail.com</td>
+                            <td>${contact.mail}</td>
                             <td> * </td>
                             <td>
                                 <h4>Phone: </h4>
                             </td>
-                            <td>SE 76 180 55 94</td>
+                            <td>${contact.phone}</td>
                             <td> * </td>
+                            <td>
+                                <h4>Web: </h4>
+                                <td>${contact.web}</td>
+                            </td>
                         </tr>
                     </tbody>
                     <tfoot></tfoot>
@@ -171,35 +175,9 @@
             </h5>
 
             <div class="flex flex-content">
-                <div class="list-item-alt">
-                    GitHub: <b>perjo927</b>
-                    <img src="http://dandelion.github.io/slides/dandelion-0.10.0/assets/images/logo_github_small.gif">
-                </div>
-
-                <div class="list-item-alt">
-                    Twitter: <b>@programmerper</b>
-                    <img src="https://cdn4.iconfinder.com/data/icons/free-large-twitter-icons/256/Round_button.png">
-
-                </div>
-
-                <div class="list-item-alt">
-                    LinkedIn: <b>djpjgj</b>
-                    <img src="http://www.enac.fr/fr/system/files/social_linkedin_button_blue.png">
-                </div>
-
-                <div class="list-item-alt">
-                    WordPress: <b>programmerper</b>
-                    <img src="http://vectorlogofree.com/wp-content/uploads/2014/01/23763-wordpress-logo-icon-vector-icon-vector-eps.png">
-                </div>
-
-                <div class="list-item-alt">
-                    Soundcloud: <b>djpjgj</b>
-                    <img src="http://floject.com/bd2/wp-content/uploads/2016/05/soundcloud-logo.png">
-                </div>
-
-                <div class="list-item-alt">
-                    Web Site: <b>programmerper.com</b>
-                    <img src="http://vectorlogofree.com/wp-content/uploads/2014/08/8173-p-logo-circle-icon-vector-icon-vector-eps.png">
+                <div class="list-item-alt" repeat.for="p of presence">
+                    ${p.title}: <b>${p.handle}</b>
+                    <img src.bind="'../static/' + p.image">
                 </div>
             </div>
         </section>
@@ -208,28 +186,12 @@
             Recommendations
         </h2>
         <section>
-            <h6>Betsson: Bjorg E</h6>
-            <blockquote>
-                <b>"</b> Always on point, trustworthy and a talented coder, a good team player and easy to work with ...
-                Per rocks! <b>"</b>
-            </blockquote>
-
-            <h6>Ericsson: Svante S</h6>
-            <blockquote>
-                <b>"</b> With his constructive way, Per has helped us to streamline the way we carry out follow-up work ...
-                we give him excellent recommendations <b>"</b>
-            </blockquote>
-
-            <h6>Linkoping: Hannah B</h6>
-            <blockquote>
-                <b>"</b> Per is one of the most driven, hard-working and sharp person I have worked with. <b>"</b>
-            </blockquote>
-
-            <h6>CoderDojo: Marcus N</h6>
-            <blockquote>
-                <b>"</b> I love Per's drive! ... He has a great approach to problem solving, finds creative solutions ...
-                and is positive and fun to be with. <b>"</b>
-            </blockquote>
+            <div repeat.for="r of recommendations">
+                <h6>${r.title}</h6>
+                <blockquote>
+                    <b>"</b> ${r.text} <b>"</b>
+                </blockquote>
+            </div>
         </section>
         </div>
 </template>
