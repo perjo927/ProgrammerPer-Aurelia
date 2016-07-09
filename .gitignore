@@ -5,6 +5,7 @@ npm-debug.log*
 /build
 /typings
 /.awcache
+/.vscode
 /electron.js*
 /release
 /test/coverage
