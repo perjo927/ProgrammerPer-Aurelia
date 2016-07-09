@@ -1,0 +1,128 @@
+nav {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background: $material_dark_gray;
+  border-bottom: 5px dotted $material_medium_green;
+
+  a {
+    transition: font-weight 0.67s ease, opacity 0.67s ease;
+    display: flex;
+    align-items: flex-start;
+    padding: 1.25rem 0.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    opacity: 0.4;
+
+    &:hover {
+      opacity: 0.7;
+
+      programmer-per-icon {
+        opacity: 1;
+      }
+    }
+
+    &:focus, .selected {
+      opacity: 1;
+      font-weight: 100;
+
+      programmer-per-icon {
+        opacity: 0.3;
+      }
+    }
+  }
+
+  programmer-per-icon {
+    transition: opacity 0.67s ease;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.7rem;
+    opacity: 0;
+  }
+
+  span {
+    @extend %fonts_primary;
+    font-weight: 400;
+    font-size: 1rem;
+  }
+}
+
+
+/* Media */
+@media(min-width: 701px) {
+  nav {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+
+  .hamburger-checkbox, .hamburger-label {
+    display: none;
+  }
+}
+
+@media(max-width: 700px) {
+
+  nav {
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    transition: all .3s;
+
+    a {
+      justify-content: center;
+    }
+  }
+
+  section {
+    margin-top: 3.5rem;
+  }
+
+  .hamburger-checkbox {
+    position: absolute;
+    opacity: 0;
+  }
+
+  .hamburger-label {
+    transition: all cubic-bezier(0.22, 0.61, 0.36, 1) 0.5s;
+    position: absolute;
+    z-index: 1;
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    font-size: 42px ;
+    font-family: fontawesome;
+    color: $material_medium_green;
+    cursor: pointer;
+  }
+
+  .hamburger-checkbox:checked ~ .hamburger-label {
+    transform: rotate(90deg);
+  }
+
+  .hamburger-checkbox:checked ~ nav {
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+    border-right: 5px dotted $material_medium_green;
+  }
+}
+
+/* Manipulation */
+$colors: (
+        Home: $material_medium_green,
+        Per: $material_dark_blue,
+        Portfolio: $material_light_pink,
+        Social: $material_dark_pink,
+        Cv: $material_dark_yellow,
+        Skills: $material_medium_cyan,
+        Blog: $material_white
+);
+
+@each $pointer, $c in $colors
+{
+  .#{$pointer} {
+    color: $c;
+  }
+}

@@ -1,20 +1,17 @@
 <template bindable="router">
-  <nav role="navigation">
-    <div>
-      <!--<a href="#">
-        <i class="fa fa-home"></i>
-        <span>${router.title}</span>
-      </a>-->
-    </div>
+  <require from="./programmer-per-icon.html"></require>
 
-    <div>
-      <!-- TODO -->
-      <!--<ul class="nav-item">
-        <li repeat.for="row of router.navigation" class="${row.isActive ? 'active' : ''}">
-          <a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" href.bind="row.href">${row.title}</a>
-        </li>
-      </ul>-->
+  <input id="hamburger" type="checkbox" class="hamburger-checkbox">
+  <label for="hamburger" class="hamburger-label" role="button">&#xf0c9;</label>
 
-    </div>
+  <nav role='navigation'>
+    <a repeat.for="row of router.navigation" href.bind="row.href">
+      <programmer-per-icon class="${row.title}" class="${row.isActive ? 'selected' : ''}">
+      </programmer-per-icon>
+
+      <span class="${row.name} ${row.title}" class="${row.isActive ? 'selected' : ''}">
+            ${row.title}
+        </span>
+    </a>
   </nav>
 </template>

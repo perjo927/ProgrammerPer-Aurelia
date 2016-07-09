@@ -1,0 +1,42 @@
+@import 'colors';
+
+$primary_color: $material_medium_pink;
+$dark_primary_color: $material_dark_pink;
+$light_primary_color: $material_light_cyan;
+$contrast_color: $material_white;
+
+$primary_accent_color: $material_medium_pink;
+$secondary_accent_color: $material_medium_cyan;
+$tertiary_accent_color: $material_light_cyan;
+$quartiary_accent_color: $material_light_pink;
+
+$primary_default_color: $material_dark_gray;
+$secondary_default_color: $material_medium_gray;
+
+$divider_color: $material_light_gray;
+$negative_background_color: $material_black;
+
+$primary_background_color: rgba($light_primary_color, 0.7);
+$secondary_background_color: $primary_default_color;
+$tertiary_background_color: $material_dark_cyan;
+
+$primary_text_color: $primary_default_color;
+$secondary_text_color: $dark_primary_color;
+$tertiary_text_color: $quartiary_accent_color;
+$quintiary_text_color: $secondary_accent_color;
+$heading_text_color: $negative_background_color;
+$pre_color: $primary_accent_color;
+
+$primary_border_color: $contrast_color;
+$secondary_border_color: $primary_default_color;
+$tertiary_border_color: $tertiary_accent_color;
+$quartiary_border_color: $tertiary_accent_color;
+
+$primary_gradient_color: $primary_default_color;
+$secondary_gradient_color: $negative_background_color;
+$tertiary_gradient_color: $secondary_accent_color;
+
+$primary_shadow_color: rgba($negative_background_color, 0.25);
+$secondary_shadow_color: rgba($negative_background_color, 0.3);
+$primary_text_shadow_color: rgba($secondary_accent_color, 1.0);
+$secondary_text_shadow_color: $primary_accent_color;
