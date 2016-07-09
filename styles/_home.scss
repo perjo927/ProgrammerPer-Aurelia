@@ -1,0 +1,40 @@
+p {
+    animation-name: fadein;
+    animation-duration: 10s;
+    padding: 0 4rem;
+}
+
+a {
+    animation-name: fadein;
+    animation-duration: 10s;
+    color: $material_medium_green;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+
+.home-title {
+    text-shadow: 0.5rem 0.2rem 2.5rem $material_dark_green;
+    color: $material_medium_green;
+}
+
+.type-text {
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    animation: type 4s steps(60, end);
+}
+
+.blink {
+    animation: blink 1s infinite;
+}
+
+span {
+    color: $material_medium_green;
+    @extend %fonts_primary; 
+}

@@ -41,7 +41,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/aurelia/skeleton-navigation.git"
+    "url": "git+ssh://git@github.com:perjo927/ProgrammerPer-Aurelia.git"
   },
   "keywords": [
     "aurelia",
@@ -50,19 +50,14 @@
     "webpack"
   ],
   "license": "CC0-1.0",
-  "author": "Rob Eisenberg <rob@bluespire.com> (http://robeisenberg.com/)",
+  "author": "Per Jonsson",
   "contributors": [
     {
-      "name": "Arjen de Blok"
-    },
-    {
-      "name": "Bazyli Brzóska <bazyli.brzoska@gmail.com> (https://invent.life)"
+      "name": "Per Jonsson"
     }
   ],
-  "bugs": {
-    "url": "https://github.com/aurelia/skeleton-navigation/issues"
-  },
-  "homepage": "https://github.com/aurelia/skeleton-navigation#readme",
+  
+  "homepage": "http://www.programmerper.com",
   "aurelia": {
     "build": {
       "resources": []
