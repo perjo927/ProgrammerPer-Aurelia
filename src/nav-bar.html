@@ -1,20 +1,16 @@
 <template bindable="router">
-
-  <!--<a href="#">
-        <i class="fa fa-home"></i>
-        <span>${router.title}</span>
-      </a>-->
+  <require from="./programmer-per-icon.html"></require>
 
   <input id="hamburger" type="checkbox" class="hamburger-checkbox">
   <label for="hamburger" class="hamburger-label" role="button">&#xf0c9;</label>
 
   <nav role='navigation'>
     <a repeat.for="row of router.navigation" href.bind="row.href">
-      <programmer-per-icon class="${row.name} ${row.title}" class="${row.isActive ? 'selected' : ''}">
+      <programmer-per-icon class="${row.title}" class="${row.isActive ? 'selected' : ''}">
       </programmer-per-icon>
 
       <span class="${row.name} ${row.title}" class="${row.isActive ? 'selected' : ''}">
-            ${row.name} / ${row.title}
+            ${row.title}
         </span>
     </a>
   </nav>

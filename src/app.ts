@@ -8,16 +8,9 @@ export class App {
     config.title = "Programmer Per";
     config.map([
       {
-        route: ["", "cv"],
-        name: "cv",
-        moduleId: "./cv",
-        nav: true,
-        title: "CV"
-      },
-      {
-        route: ["home"],
+        route: ["", "home"],
         name: "home",
-        moduleId: "./cv",
+        moduleId: "./home",
         nav: true,
         title: "Home",
       },
@@ -52,7 +45,7 @@ export class App {
       },
       {
         route: ["cv"],
-        name: "cv",
+        name: "CV",
         moduleId: "./cv",
         nav: true,
         title: "Cv",
