@@ -92,11 +92,6 @@ section {
   }
 }
 
-.profile-pic {
-  height: 250px;
-  width: 200px;
-}
-
 ul {
   @extend %fonts_primary;
   font-size: 8px;
@@ -196,19 +191,6 @@ ol li {
        
     background: white;
   }
-}
-
-table {
-  @extend %fonts_primary;
-  font-size: 8px;
-  
-  img {
-    width: 20px;
-    height: 20px;
-    border: none;
-    box-shadow: none;   
-    margin: 0;
-  }  
 }
 
 .ribbon {

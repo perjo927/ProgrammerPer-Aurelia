@@ -27,7 +27,6 @@ export class App {
         moduleId: "./cv",
         nav: true,
         title: "Portfolio",
-
       },
       {
         route: ["social"],

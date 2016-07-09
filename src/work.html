@@ -1,0 +1,14 @@
+<template>
+    <section>
+        <ul class="flex">
+            <li repeat.for="item of work">
+                <img src.bind="'../static/' + item.image" />
+                <h3>${item.title}</h3>
+                <b>${item.year}</b>
+                <span repeat.for="a of item.achievements">
+                    ${a}
+                </span>
+            </li>
+        </ul>
+    </section>
+</template>

@@ -1,4 +1,7 @@
 <template>
+    <require from="./about.html"></require>
+    <require from="./work.html"></require>
+    <require from="./skills.html"></require>
 
     <div class="ribbon">
         <div class="title">
@@ -14,89 +17,16 @@
             </h1>
         </div>
 
-        <h2>
-            About
-        </h2>
+        <h2>About</h2>
+        <about id="#about"></about>      
 
-        <section class="flex">
-            <div>
-                <!-- TODO: Markdown support -->
-                <p>
-                    > Hello world, I am <b>Per</b>: a programmer.
-                </p>
-                <p>
-                    <b>Avant-garde</b> is my motto; Literally it means being in the forefront, metaphorically front-end developer.
-                </p>
+        <h2>Work</h2>        
+        <work id="#work"></work>
 
-                <p>
-                    The web is my love; be it UX, test automation, server programming or APIs - Per is there, striving for Perfection. I believe
-                    in working with a web that doesnt break, following conventions and standards. </p>
+        <h2>Skills</h2>
+        <skills id="#skills"></skills>
 
-                <p> My markup is semantic, with de-coupled styles, my scripts follow <b>SOLID</b> principles. The code is tested
-                    and modular, as I promote <b>Web Components</b> and <b>Continuous Integration</b>. Using <b>TDD</b> from
-                    a behaviour-driven perspective, the clients get what they expect. Java-/TypeScript and .NET is my foundation,
-                    but not afraid of using other domains. Read more in my <b>blog</b>.
-                </p>
-
-                <p> With a
-                    <b>Bachelor degree</b> in Programming (and Music Production) from <b>Linkoping university</b> where
-                    I also served as a programming tutor, and a thesis work at <b>Ericsson</b>, my career started at <b>Betsson</b>                    as a trainee, providing the company with some cool tools.
-                </p>
-
-                <p>
-                    Now working in a B2B site team at Betsson where we improved our mobile web sites and the desktop sites as well as the sportsbook
-                    product.
-                </p>
-            </div>
-
-            <!-- TODO: Fetch -->
-            <img class="profile-pic" src.bind="'../static/' + profile">
-
-        </section>
-
-
-        <h2>
-            Work
-        </h2>
-        <section>
-            <ul class="flex">
-                <li repeat.for="item of work">
-                    <img src.bind="'../static/' + item.image" />
-                    <h3>${item.title}</h3>
-                    <b>${item.year}</b>
-                    <span repeat.for="a of item.achievements">
-                        ${a}
-                    </span>
-                </li>
-
-            </ul>
-        </section>
-
-        <h2>
-            Skills
-        </h2>
-
-
-        <section class="flex flex-content">
-            <div repeat.for="s of skills"> 
-                <table>
-                    <thead></thead>
-                    <tbody>
-                        <tr repeat.for="l of s.list">
-                            <td>${l.skill}</td>
-                            <td repeat.for="i of l.level">
-                                <img src.bind="'../static/ghost_' + l.level +'.gif'"/>
-                            </td>
-                        </tr>
-                    </tbody>
-                    <tfoot></tfoot>
-                </table>
-            </div>           
-        </section>
-
-        <h2>
-            Portfolio
-        </h2>
+        <h2>Portfolio</h2>
 
         <section>
             <h5>
