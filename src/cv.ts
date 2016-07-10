@@ -12,8 +12,8 @@ export class Cv {
         {
             image: "betsson_logo.png",
             title: "Web Developer",
-            year: "2015/16",
-            achievements: [
+            subtitle: "2015/16",
+            textlist: [
                 "Sportsbook",
                 "3 Mobile Web Sites",
                 "3 Desktop Web Sites"
@@ -22,8 +22,8 @@ export class Cv {
         {
             image: "betsson_logo.png",
             title: "Trainee",
-            year: "2014",
-            achievements: [
+            subtitle: "2014",
+            textlist: [
                 "Scrum Dashboard",
                 "Live Casino Lobby Prototype",
                 "Game Management Tool"
@@ -32,8 +32,8 @@ export class Cv {
         {
             image: "ericsson.png",
             title: "Ericsson",
-            year: "2014",
-            achievements: [
+            subtitle: "2014",
+            textlist: [
                 "Thesis: Web Surveys",
                 "Work Enviroment Web Poll App"
             ]
@@ -41,8 +41,8 @@ export class Cv {
         {
             image: "liu_logo.png",
             title: "Linkoping Uni",
-            year: "2013/14",
-            achievements: [
+            subtitle: "2013/14",
+            textlist: [
                 "Programming Tutor",
                 "Web Course Provider"
             ]
@@ -50,8 +50,8 @@ export class Cv {
         {
             image: "coderowl.png",
             title: "Coach",
-            year: "2013/14",
-            achievements: [
+            subtitle: "2013/14",
+            textlist: [
                 "CoderDojo NKPG",
                 "Programming Tutoring"
             ]
@@ -62,32 +62,32 @@ export class Cv {
         {
             image: "vote_1.png",
             title: "Innovative Programming",
-            year: "120 hp",
-            achievements: ["Linkoping University BSc"]
+            subtitle: "120 hp",
+            textlist: ["Linkoping University BSc"]
         },
         {
             image: "c_logo.png",
             title: "Information Retrieval",
-            year: "15 hp",
-            achievements: ["Linkoping University"]
+            subtitle: "15 hp",
+            textlist: ["Linkoping University"]
         },
         {
             image: "mupp.gif",
             title: "Music Producer Programme",
-            year: "150 hp",
-            achievements: ["Linkoping University BSc"]
+            subtitle: "150 hp",
+            textlist: ["Linkoping University BSc"]
         },
         {
             image: "liu_logo.png",
             title: "Linguistic Science",
-            year: "30 hp",
-            achievements: ["Linkoping University"]
+            subtitle: "30 hp",
+            textlist: ["Linkoping University"]
         },
         {
             image: "liu_logo.png",
             title: "Media & Communication",
-            year: "30hp",
-            achievements: ["Linkoping University"]
+            subtitle: "30hp",
+            textlist: ["Linkoping University"]
         }
     ];
 
