@@ -1,27 +1,14 @@
 <template bindable="portfolio">
+    <require from="./card-olist.html"></require>
+    <require from="./card-mini-list.html"></require>
+
     <section>
-        <h5>
-            Projects
-        </h5>
+        <h5>Projects</h5>
+        <card-olist info.bind="portfolio"></card-olist>
 
-        <ol class="flex">
-            <li repeat.for="p of portfolio.projects">
-                <h5>${p.title}</h5>
-                ${p.description}
-                <img src.bind="'../static/' + p.image">
-            </li>
-        </ol>
+        <h5>Competitions</h5>
+        <card-mini-list info.bind="portfolio.competitions" style.bind="'mini-card'">
+        </card-mini-list>
 
-        <h5>
-            Competitions
-        </h5>
-
-        <div class="flex flex-content">
-            <div class="list-item" repeat.for="c of portfolio.competitions">
-                <img src.bind="'../static/' + c.image">
-                <!-- TODO: Markdown -->
-                ${c.description} <b>${c.emphasis}</b>
-            </div>
-        </div>
     </section>
 </template>

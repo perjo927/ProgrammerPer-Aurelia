@@ -1,0 +1,20 @@
+card {
+  @include card(33%, transparent, 50%);
+}
+
+card-inverse {
+  @include card(50%, white, 0);
+}
+
+
+.mini-card {
+  @include mini_card(100px, 50px, white);
+}
+
+.mini-card-inverse {
+  @include mini_card(100px, 100px, transparent);
+
+  img {
+    box-shadow: none;
+  }
+}

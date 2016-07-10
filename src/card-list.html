@@ -1,0 +1,9 @@
+<template bindable="info">
+    <require from="./card.html"></require>
+
+    <ul class="flex">
+        <li repeat.for="item of info">
+            <card item.bind="item"></card>
+        </li>
+    </ul>
+</template>

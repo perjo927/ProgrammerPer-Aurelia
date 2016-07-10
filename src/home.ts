@@ -1,5 +1,5 @@
 export class Home {
     constructor() {
-        console.error("Hello, World");
+        console.log("Hello, World");
     }
 }
