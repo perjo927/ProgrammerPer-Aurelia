@@ -1,3 +1,5 @@
+import { ICard } from "./card";
+
 export class Cv {
     title: string = "Programmer Per";
 
@@ -8,7 +10,7 @@ export class Cv {
     profile: string = "per.jpg";
 
     // TODO: data interfaces
-    work: any = [
+    work: Array<ICard> = [
         {
             image: "betsson_logo.png",
             title: "Web Developer",
@@ -58,7 +60,7 @@ export class Cv {
         },
     ];
 
-    education: any = [
+    education: Array<ICard> = [
         {
             image: "vote_1.png",
             title: "Innovative Programming",
