@@ -37,3 +37,8 @@ blockquote {
   line-height: 0.4em;
   font-size: 0.8em;
 }
+
+ul {
+  @extend %fonts_primary;
+  font-size: 8px;
+}

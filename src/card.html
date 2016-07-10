@@ -1,0 +1,9 @@
+<template bindable="item">
+    <img src.bind="'../static/' + item.image" />
+    <h3>${item.title}</h3>
+    <b>${item.year}</b>
+    <br>    
+    <span repeat.for="a of item.achievements">
+        ${a}
+    </span>
+</template>

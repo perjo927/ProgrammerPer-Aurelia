@@ -1,5 +1,5 @@
 
- .pulse {
+.pulse {
   -webkit-animation: pulsate 5s infinite; 
   animation:         pulsate 5s infinite; 
 }
@@ -7,7 +7,7 @@
 section {
   box-sizing: border-box;
   width: 102%;
-  margin: -10px 0px -20px -10px;
+  margin: -20px 0px -20px -10px;
   padding: 15px 15px 5px 25px;
   border: 10px solid $primary_border_color;  
  
@@ -24,62 +24,6 @@ section {
   img {
     @extend %frame;    
   }
-}
-
-ul {
-  @extend %fonts_primary;
-  font-size: 8px;
-}
-
-ul li {
-  // TODO: placeholder
-  list-style: none;
-    
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  
-  margin: 0.3em;
-  
-  width: 175px; height: 175px;
-  
-  box-sizing: border-box;  
-  @extend %frame;
-    
-  text-align: center;
-  color: $quintiary_text_color;
-  @extend %fonts_secondary;
-  font-size: 1.2em;
-    
-  @extend %linear_gradient_top;
-  
-  img {       
-    height: 33%;
-    width: 33%;
-    
-    margin: 10px auto;
-    padding: 0.2em;
-       
-    border-radius: 50%;  
-    border: transparent;
-    box-shadow: 0 1px 20px $secondary_accent_color;
-       
-    background: transparent;
-  }
-}
-
-ul.nav-item li {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  
-    
-  width: auto;
-  height: auto;
-  
-  border: none;
-  box-shadow: none;
 }
 
 ol {
