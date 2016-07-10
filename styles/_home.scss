@@ -1,40 +1,56 @@
-p {
-    animation-name: fadein;
-    animation-duration: 10s;
-    padding: 0 4rem;
+.home {
+    margin-top: 3em;
+
+    b {
+        color: $console_color;
+    }
+
+    p {
+        animation-name: fadein;
+        animation-duration: 10s;
+        padding: 0 4rem;
+        color: $quintiary_text_color;
+        font-size: 0.8em;
+    }
+
+    a {
+        animation-name: fadein;
+        animation-duration: 10s;
+        color: $material_medium_green;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .home-title {
+        text-shadow: 0.5rem 0.2rem 2.5rem $material_dark_green;
+        color: $material_medium_green;
+    }
+
+    .type-text {
+        white-space: nowrap;
+        overflow: hidden;
+        width: 100%;
+        animation: type 4s steps(60, end);
+    }
+
+    .blink {
+        animation: blink 1s infinite;
+    }
+
+    span {
+        color: $console_color;
+        @extend %fonts_primary; 
+    }
 }
 
-a {
-    animation-name: fadein;
-    animation-duration: 10s;
-    color: $material_medium_green;
-    font-weight: bold;
-    text-decoration: none;
-}
+.youtube {
+    margin-top: 0.5em;
+    width: 99%;
+    border: none;
 
-h3 {
-    text-align: center;
-    margin-bottom: 0;
-}
-
-
-.home-title {
-    text-shadow: 0.5rem 0.2rem 2.5rem $material_dark_green;
-    color: $material_medium_green;
-}
-
-.type-text {
-    white-space: nowrap;
-    overflow: hidden;
-    width: 100%;
-    animation: type 4s steps(60, end);
-}
-
-.blink {
-    animation: blink 1s infinite;
-}
-
-span {
-    color: $material_medium_green;
-    @extend %fonts_primary; 
+    iframe {
+        width: 100%;
+        height: 500px;
+        height: 50vh;
+    }
 }

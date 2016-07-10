@@ -1,0 +1,39 @@
+<template bindable="contact">
+    <section>
+        <div class="contact">
+            <table>
+                <thead></thead>
+                <tbody>
+                    <tr>
+                        <!-- TODO: font awesome -->
+                        <td> * </td>
+                        <td>
+                            <h4>Mail: </h4>
+                        </td>
+                        <td>${contact.addresses.mail}</td>
+                        <td> * </td>
+                        <td>
+                            <h4>Phone: </h4>
+                        </td>
+                        <td>${contact.addresses.phone}</td>
+                        <td> * </td>
+                        <td>
+                            <h4>Web: </h4>
+                            <td>${contact.addresses.web}</td>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot></tfoot>
+            </table>
+        </div>
+
+        <h5>Web Presence</h5>
+        <social></social>
+        <div class="flex flex-content">
+            <div class="list-item-alt" repeat.for="p of contact.presence">
+                ${p.title}: <b>${p.handle}</b>
+                <img src.bind="'../static/' + p.image">
+            </div>
+        </div>
+    </section>
+</template>

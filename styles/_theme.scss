@@ -16,7 +16,7 @@ $secondary_default_color: $material_medium_gray;
 $divider_color: $material_light_gray;
 $negative_background_color: $material_black;
 
-$primary_background_color: rgba($light_primary_color, 0.7);
+$primary_background_color: rgba($light_primary_color, 0.95);
 $secondary_background_color: $primary_default_color;
 $tertiary_background_color: $material_dark_cyan;
 
@@ -40,3 +40,5 @@ $primary_shadow_color: rgba($negative_background_color, 0.25);
 $secondary_shadow_color: rgba($negative_background_color, 0.3);
 $primary_text_shadow_color: rgba($secondary_accent_color, 1.0);
 $secondary_text_shadow_color: $primary_accent_color;
+
+$console_color: $material_medium_green;

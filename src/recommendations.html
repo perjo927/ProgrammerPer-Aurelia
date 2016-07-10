@@ -1,0 +1,10 @@
+<template bindable="recommendations">
+    <section>
+        <div repeat.for="r of recommendations">
+            <h6>${r.title}</h6>
+            <blockquote>
+                <b>"</b> ${r.text} <b>"</b>
+            </blockquote>
+        </div>
+    </section>
+</template>

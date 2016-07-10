@@ -1,20 +1,9 @@
 export class Cv {
-    title: string = 'Programmer Per';
+    title: string = "Programmer Per";
 
     // TODO: Markdown plugin
     about: string = `
-    > Hello world, I am Per: a programmer.
-
-    Avant-garde is my motto; Literally it means being in the forefront, metaphorically front-end developer.
-
-    The web is my love; be it UX, test automation, server programming or APIs - Per is there, striving for Perfection. I believe in working with a web that doesnâ€™t break, following conventions and standards.
-
-    My markup is semantic, with de-coupled styles, my scripts follow SOLID principles. The code is tested and modular, as I promote Web Components and Continuous Integration. Using TDD from a behaviour-driven perspective, the clients get what they expect. Java-/TypeScript and .NET is my foundation, but not afraid of using other domains. Read more in my blog.
-
-    With a Bachelor degree in Programming (and Music Production) from Linköping university where I also served as a programming tutor, and a thesis work at Ericsson, my career started at Betsson as a trainee, providing the company with some cool tools.
-
-    Now working in a B2B site team at Betsson where we improved our mobile web sites and the desktop sites as well as the sportsbook product.
-  `;
+    `;
 
     profile: string = "per.jpg";
 
@@ -167,91 +156,93 @@ export class Cv {
         }
     ];
 
-    projects: any = [
-        {
-            title: "This CV",
-            description: "This app, made with Aurelia",
-            image: "qr-pp-aurelia.png",
-            link: ""
-        },
-        {
-            title: "CSS Guidelines",
-            description: "My CSS architecture philosophy",
-            image: "qr-css.png",
-            link: ""
-        },
-        {
-            title: "CasinoMetropolMobile",
-            description: "Casino site co-produced @Betsson",
-            image: "qr-cmet.png",
-            link: "https://casino.casinometropolmobile.com/tr/#/"
-        },
-        {
-            title: "<3",
-            description: "My own programmming language",
-            image: "qr-three.png",
-            link: ""
-        },
-        {
-            title: "Ericsson Web Poll",
-            description: "Web survey admin for Ericsson",
-            image: "qr-eson-rec.png",
-            link: "../static/ericsson-rec.jpg"
-        },
-        {
-            title: "Angular2 & ASP.NET",
-            description: "Research on Angular2/ASP.NET RC",
-            image: "qr-ng2-aspnet.png",
-            link: ""
-        },
-        {
-            title: "Yellow D. Brewery",
-            description: "Web site made for NKPG brewery",
-            image: "qr-ydb.png",
-            link: ""
-        },
-        {
-            title: "hWorld",
-            description: "Edu game improved for LiU",
-            image: "qr-hworld.png",
-            link: ""
-        },
-        {
-            title: "East Sweden Hack",
-            description: "Educational Quiz Hack",
-            image: "qr-east-hack.png",
-            link: ""
-        },
-        {
-            title: "PREYBIRD.com",
-            description: "My own music",
-            image: "qr-preybird.png",
-            link: ""
-        },
-    ];
+    portfolio: any = {
+        projects: [
+            {
+                title: "This CV",
+                description: "This app, made with Aurelia",
+                image: "qr-pp-aurelia.png",
+                link: ""
+            },
+            {
+                title: "CSS Guidelines",
+                description: "My CSS architecture philosophy",
+                image: "qr-css.png",
+                link: ""
+            },
+            {
+                title: "CasinoMetropolMobile",
+                description: "Casino site co-produced @Betsson",
+                image: "qr-cmet.png",
+                link: "https://casino.casinometropolmobile.com/tr/#/"
+            },
+            {
+                title: "<3",
+                description: "My own programmming language",
+                image: "qr-three.png",
+                link: ""
+            },
+            {
+                title: "Ericsson Web Poll",
+                description: "Web survey admin for Ericsson",
+                image: "qr-eson-rec.png",
+                link: "../static/ericsson-rec.jpg"
+            },
+            {
+                title: "Angular2 & ASP.NET",
+                description: "Research on Angular2/ASP.NET RC",
+                image: "qr-ng2-aspnet.png",
+                link: ""
+            },
+            {
+                title: "Yellow D. Brewery",
+                description: "Web site made for NKPG brewery",
+                image: "qr-ydb.png",
+                link: ""
+            },
+            {
+                title: "hWorld",
+                description: "Edu game improved for LiU",
+                image: "qr-hworld.png",
+                link: ""
+            },
+            {
+                title: "East Sweden Hack",
+                description: "Educational Quiz Hack",
+                image: "qr-east-hack.png",
+                link: ""
+            },
+            {
+                title: "PREYBIRD.com",
+                description: "My own music",
+                image: "qr-preybird.png",
+                link: ""
+            },
+        ],
 
-    competitions: any = [
-        {
-            image: "money-conf-2016.png",
-            description: "Winner: Open Source Contribution competition",
-            emphasis: "Moneyconf 2016"
-        },
-        {
-            image: "web_summit_logo.jpeg",
-            description: "Winner: Open Source Contribution competition",
-            emphasis: "Web Summit 2016"
-        },
-        {
-            image: "east_hack.jpg",
-            description: "Finalist: of",
-            emphasis: "East Sweden Hack 2014"
-        },
-        {
-            image: "icpc_logo.png",
-            description: "Participant: of",
-            emphasis: "Nordic Collegiate Programming Contest 2013&14"
-        }
-    ]
+        competitions: [
+            {
+                image: "money-conf-2016.png",
+                description: "Winner: Open Source Contribution competition",
+                emphasis: "Moneyconf 2016"
+            },
+            {
+                image: "web_summit_logo.jpeg",
+                description: "Winner: Open Source Contribution competition",
+                emphasis: "Web Summit 2016"
+            },
+            {
+                image: "east_hack.jpg",
+                description: "Finalist: of",
+                emphasis: "East Sweden Hack 2014"
+            },
+            {
+                image: "icpc_logo.png",
+                description: "Participant: of",
+                emphasis: "Nordic Collegiate Programming Contest 2013&14"
+            }
+        ]
+    };
 
     education: any = [
         {
@@ -287,43 +278,44 @@ export class Cv {
     ];
 
     contact: any = {
+        addresses: {
             mail: "djpjgj [at] gmail.com",
             phone: "SE 76 180 55 94",
             web: "http://programmerper.com"
+        },
+        presence: [
+            {
+                title: "GitHub",
+                handle: "perjo927",
+                image: "github_logo.gif"
+            },
+            {
+                title: "LinkedIn",
+                handle: "djpjgj",
+                image: "linkedin.png"
+            },
+            {
+                title: "WordPress",
+                handle: "programmerper",
+                image: "wordpress.png"
+            },
+            {
+                title: "Twitter",
+                handle: "programmerper",
+                image: "twitter.png"
+            },
+            {
+                title: "SoundCloud",
+                handle: "djpjgj",
+                image: "soundcloud-logo.png"
+            },
+            {
+                title: "Per's Web",
+                handle: "programmerper.com",
+                image: "p-logo.png"
+            },
+        ]
     };
-
-    presence: any = [
-        {
-            title: "GitHub",
-            handle: "perjo927",
-            image: "github_logo.gif"
-        },
-        {
-            title: "LinkedIn",
-            handle: "djpjgj",
-            image: "linkedin.png"
-        },
-        {
-            title: "WordPress",
-            handle: "programmerper",
-            image: "wordpress.png"
-        },
-        {
-            title: "Twitter",
-            handle: "programmerper",
-            image: "twitter.png"
-        },
-        {
-            title: "SoundCloud",
-            handle: "djpjgj",
-            image: "soundcloud-logo.png"
-        },
-        {
-            title: "Per's Web",
-            handle: "programmerper.com",
-            image: "p-logo.png"
-        },
-    ];
 
     recommendations: any = [
         {

@@ -1,73 +1,7 @@
-.contact {  
-   padding: 0 7.5em;
- }
 
  .pulse {
   -webkit-animation: pulsate 5s infinite; 
   animation:         pulsate 5s infinite; 
-}
-
-.list-item {
-  @extend %fonts_secondary;
-  font-size: 8px;
-    
-  border: none;
-  //box-shadow: 0 0 30px $secondary_accent_color;
-  
-  width: 120px;
-  height: 120px;
-  
-  text-align: center;
-  
-  img {
-    width: 100px;
-    height: 50px;
-    
-    background: white;
-    
-    border: none;
-  }
-}
-
-.list-item-alt {
-  @extend %fonts_secondary;
-  font-size: 8px;
-    
-  border: none;
-  
-  width: 120px;
-  height: 120px;
-  
-  text-align: center;
-  
-  img {
-    width: 100px;
-    height: 100px;
-    
-    background: transparent;
-    
-    border: none;
-    box-shadow: none;
-
-  }
-}
-
-.title {
-  box-sizing: border-box;
-  width: 102%;
-  margin: 0 0 -20px -10px;
-    
-  @extend %linear_gradient_top;  
-}
-
-.flex {  
-  display: flex;
-  flex-direction: row;    
-}
-
-.flex-content {
-  flex-wrap: nowrap;
-  justify-content: space-around;
 }
 
 section {
@@ -90,11 +24,6 @@ section {
   img {
     @extend %frame;    
   }
-}
-
-.profile-pic {
-  height: 250px;
-  width: 200px;
 }
 
 ul {
@@ -198,17 +127,67 @@ ol li {
   }
 }
 
-table {
-  @extend %fonts_primary;
+.list-item {
+  @extend %fonts_secondary;
   font-size: 8px;
+    
+  border: none;
+  //box-shadow: 0 0 30px $secondary_accent_color;
+  
+  width: 120px;
+  height: 120px;
+  
+  text-align: center;
   
   img {
-    width: 20px;
-    height: 20px;
+    width: 100px;
+    height: 50px;
+    
+    background: white;
+    
     border: none;
-    box-shadow: none;   
-    margin: 0;
-  }  
+  }
+}
+
+.list-item-alt {
+  @extend %fonts_secondary;
+  font-size: 8px;
+    
+  border: none;
+  
+  width: 120px;
+  height: 120px;
+  
+  text-align: center;
+  
+  img {
+    width: 100px;
+    height: 100px;
+    
+    background: transparent;
+    
+    border: none;
+    box-shadow: none;
+
+  }
+}
+
+.title {
+  box-sizing: border-box;
+  width: 102%;
+  margin: 0 0 -20px -10px;
+    
+  @extend %linear_gradient_top;  
+}
+
+.flex {  
+  display: flex;
+  flex-direction: row;    
+}
+
+.flex-content {
+  flex-wrap: nowrap;
+  justify-content: space-around;
 }
 
 .ribbon {
