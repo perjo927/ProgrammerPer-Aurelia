@@ -16,7 +16,7 @@ export class App {
       },
       {
         route: ["per"],
-        name: "per",
+        name: "about",
         moduleId: "./cv",
         nav: true,
         title: "Per",
@@ -30,7 +30,7 @@ export class App {
       },
       {
         route: ["social"],
-        name: "social",
+        name: "contact",
         moduleId: "./cv",
         nav: true,
         title: "Social",
@@ -38,13 +38,13 @@ export class App {
       {
         route: ["skills"],
         name: "skills",
-        moduleId: "./cv/:skills",
+        moduleId: "./cv",
         nav: true,
         title: "Skills",
       },
       {
         route: ["cv"],
-        name: "CV",
+        name: "recommendations",
         moduleId: "./cv",
         nav: true,
         title: "Cv",
