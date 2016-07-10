@@ -3,9 +3,6 @@ import { CardList } from "./card-list";
 import { Portfolio } from "./portfolio";
 import { Contact } from "./contact";
 
-import {autoinject} from "aurelia-framework";
-
-@autoinject
 export class Cv {
     title: string = "Programmer Per";
 
@@ -385,11 +382,17 @@ export class Cv {
         }
     ];
 
-    // TODO : scroll into view
-    constructor(private element: HTMLDivElement) {
-        console.log("CV", this.element);
-        // this.element.style.backgroundColor = 'red';
-        // this.element.scrollIntoView(false);
+    myName: string;
+    myElement: any;
+
+    activate(params, routeConfig) {
+        this.myName = routeConfig.name;
     }
 
+    // Use custom attribute and/or Aurelia DOM Element injection
+    attached() {
+        this.myElement = document.querySelectorAll(this.myName)[0];
+        console.log(this.myElement);
+        this.myElement.scrollIntoView();
+    }
 }
