@@ -189,28 +189,28 @@ export class Cv {
                 subtitle: "",
                 textlist: ["Winner: Open Source Contribution competition"],
                 title: "Moneyconf 2016",
-                link: ""
+                link: "https://moneyconf.com/"
             },
             {
                 image: "web_summit_logo.jpeg",
                 subtitle: "",
                 textlist: ["Winner: Open Source Contribution competition"],
                 title: "Web Summit 2016",
-                link: ""
+                link: "https://websummit.net/"
             },
             {
                 image: "east_hack.jpg",
                 subtitle: "",
                 textlist: ["Finalist: of"],
                 title: "East Sweden Hack 2014",
-                link: ""
+                link: "http://eastswedenhack.se/"
             },
             {
                 image: "icpc_logo.png",
                 subtitle: "",
                 textlist: ["Participant: of"],
                 title: "Nordic Collegiate Programming Contest 2013&14",
-                link: ""
+                link: "https://ncpc.idi.ntnu.no/"
             }
         ]
     };
@@ -223,47 +223,47 @@ export class Cv {
         },
         presence: [
             {
-                title: "GitHub",
-                subtitle: "perjo927",
+                title: "perjo927",
+                subtitle: "",
                 image: "github_logo.gif",
-                link: "",
-                textlist: []
+                link: "https://github.com/perjo927",
+                textlist: ["GitHub: "]
             },
             {
-                title: "LinkedIn",
-                subtitle: "djpjgj",
+                title: "djpjgj",
+                subtitle: "",
                 image: "linkedin.png",
-                link: "",
-                textlist: []
+                link: "https://www.linkedin.com/in/djpjgj",
+                textlist: ["LinkedIn: "]
             },
             {
-                title: "WordPress",
-                subtitle: "programmerper",
+                title: "programmerper",
+                subtitle: "",
                 image: "wordpress.png",
-                link: "",
-                textlist: []
+                link: "https://programmerper.wordpress.com/",
+                textlist: ["WordPress: "]
             },
             {
-                title: "Twitter",
-                subtitle: "programmerper",
+                title: "programmerper",
+                subtitle: "",
                 image: "twitter.png",
-                link: "",
-                textlist: []
+                link: "https://twitter.com/ProgrammerPer",
+                textlist: ["Twitter: "]
             },
             {
-                title: "SoundCloud",
-                subtitle: "djpjgj",
+                title: "djpjgj",
+                subtitle: "",
                 image: "soundcloud-logo.png",
-                link: "",
-                textlist: []
+                link: "https://soundcloud.com/djpjgj",
+                textlist: ["SoundCloud: "]
             },
             {
-                title: "Per's Web",
-                subtitle: "programmerper.com",
+                title: "programmerper.com",
+                subtitle: "",
                 image: "p-logo.png",
-                link: "",
-                textlist: []
-            },
+                link: "http://programmerper.com/",
+                textlist: ["Per's Web: "]
+            }
         ]
     };
 

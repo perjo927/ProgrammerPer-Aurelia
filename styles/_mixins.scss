@@ -15,3 +15,16 @@
         background: $bg_color;
     }
 }
+
+@mixin mini_card($width, $height, $background) {
+    @extend %mini_card; 
+
+    img {       
+        width: $width;
+        height: $height;
+        
+        background: $background;
+        
+        border: none;
+    }
+}

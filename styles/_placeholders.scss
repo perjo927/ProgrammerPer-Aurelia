@@ -50,3 +50,15 @@
   @extend %fonts_secondary;    
   @extend %linear_gradient_top;  
 }
+
+%mini_card {
+  @extend %fonts_secondary;
+  font-size: 8px;
+    
+  border: none;
+  
+  width: 120px;
+  height: 120px;
+  
+  text-align: center;
+}

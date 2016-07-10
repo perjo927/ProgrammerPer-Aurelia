@@ -22,7 +22,7 @@
                         <td>
                             <h4>Web: </h4>
                             <td>
-                                <a href.bind="contact.addresses.web" target="_blank">
+                                <a href.bind="contact.address.web" target="_blank">
                                    ${contact.address.web}
                                 </a>
                             </td>
@@ -34,7 +34,7 @@
         </div>
 
         <h5>Web Presence</h5>       
-        <card-mini-list info.bind="contact.presence" reverse.bind="true">            
-        </card-mini-inverse>
+        <card-mini-list info.bind="contact.presence" style.bind="'mini-card-inverse'">            
+        </card-mini-list>
     </section>
 </template>
