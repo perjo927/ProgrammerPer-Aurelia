@@ -3,6 +3,7 @@ export interface ICard {
     title: string;
     subtitle: string;
     textlist: Array<string>;
+    link: string;
 }
 
 export class Card implements ICard {
@@ -10,4 +11,5 @@ export class Card implements ICard {
     title: string;
     subtitle: string;
     textlist: Array<string>;
+    link: string;
 }

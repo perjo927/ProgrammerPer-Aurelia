@@ -1,0 +1,18 @@
+<template bindable="info, reverse">
+    <require from="./card-mini.html"></require>
+
+    ${reverse}    
+
+
+    <div class="flex flex-content">
+        <div class="list-item" repeat.for="item of info">
+            <card-mini item.bind="item"></card-mini>            
+        </div>
+    </div>
+</template>
+
+<!--<div class="flex flex-content">
+    <div class="list-item-alt" repeat.for="p of contact.presence">
+
+    </div>
+</div>-->

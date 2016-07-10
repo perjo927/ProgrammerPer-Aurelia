@@ -38,7 +38,7 @@ export class App {
       {
         route: ["skills"],
         name: "skills",
-        moduleId: "./cv",
+        moduleId: "./cv/:skills",
         nav: true,
         title: "Skills",
       },

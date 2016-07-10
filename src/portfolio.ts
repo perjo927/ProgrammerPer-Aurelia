@@ -1,11 +1,11 @@
-import { CardOList } from "./card-olist";
+import { CardList } from "./card-list";
 
 export interface IPortfolio {
-    projects: CardOList;
-    competitions: any;
+    projects: CardList;
+    competitions: CardList;
 }
 
 export class Portfolio {
-    projects: CardOList;
-    competitions: any;
+    projects: CardList;
+    competitions: CardList;
 }

@@ -1,6 +1,7 @@
 import { Card } from "./card";
 import { CardList } from "./card-list";
 import { Portfolio } from "./portfolio";
+import { Contact } from "./contact";
 
 import {autoinject} from "aurelia-framework";
 
@@ -23,7 +24,9 @@ export class Cv {
                 "Sportsbook",
                 "3 Mobile Web Sites",
                 "3 Desktop Web Sites"
-            ]
+            ],
+            link: ""
+
         },
         {
             image: "betsson_logo.png",
@@ -33,7 +36,8 @@ export class Cv {
                 "Scrum Dashboard",
                 "Live Casino Lobby Prototype",
                 "Game Management Tool"
-            ]
+            ],
+            link: ""
         },
         {
             image: "ericsson.png",
@@ -42,7 +46,8 @@ export class Cv {
             textlist: [
                 "Thesis: Web Surveys",
                 "Work Enviroment Web Poll App"
-            ]
+            ],
+            link: ""
         },
         {
             image: "liu_logo.png",
@@ -51,7 +56,8 @@ export class Cv {
             textlist: [
                 "Programming Tutor",
                 "Web Course Provider"
-            ]
+            ],
+            link: ""
         },
         {
             image: "coderowl.png",
@@ -60,7 +66,8 @@ export class Cv {
             textlist: [
                 "CoderDojo NKPG",
                 "Programming Tutoring"
-            ]
+            ],
+            link: ""
         },
     ];
 
@@ -69,31 +76,36 @@ export class Cv {
             image: "vote_1.png",
             title: "Innovative Programming",
             subtitle: "120 hp",
-            textlist: ["Linkoping University BSc"]
+            textlist: ["Linkoping University BSc"],
+            link: ""
         },
         {
             image: "c_logo.png",
             title: "Information Retrieval",
             subtitle: "15 hp",
-            textlist: ["Linkoping University"]
+            textlist: ["Linkoping University"],
+            link: ""
         },
         {
             image: "mupp.gif",
             title: "Music Producer Programme",
             subtitle: "150 hp",
-            textlist: ["Linkoping University BSc"]
+            textlist: ["Linkoping University BSc"],
+            link: ""
         },
         {
             image: "liu_logo.png",
             title: "Linguistic Science",
             subtitle: "30 hp",
-            textlist: ["Linkoping University"]
+            textlist: ["Linkoping University"],
+            link: ""
         },
         {
             image: "liu_logo.png",
             title: "Media & Communication",
             subtitle: "30hp",
-            textlist: ["Linkoping University"]
+            textlist: ["Linkoping University"],
+            link: ""
         }
     ];
 
@@ -174,24 +186,84 @@ export class Cv {
         competitions: [
             {
                 image: "money-conf-2016.png",
+                subtitle: "",
                 textlist: ["Winner: Open Source Contribution competition"],
-                emphasis: "Moneyconf 2016"
+                title: "Moneyconf 2016",
+                link: ""
             },
             {
                 image: "web_summit_logo.jpeg",
+                subtitle: "",
                 textlist: ["Winner: Open Source Contribution competition"],
-                emphasis: "Web Summit 2016"
+                title: "Web Summit 2016",
+                link: ""
             },
             {
                 image: "east_hack.jpg",
+                subtitle: "",
                 textlist: ["Finalist: of"],
-                emphasis: "East Sweden Hack 2014"
+                title: "East Sweden Hack 2014",
+                link: ""
             },
             {
                 image: "icpc_logo.png",
+                subtitle: "",
                 textlist: ["Participant: of"],
-                emphasis: "Nordic Collegiate Programming Contest 2013&14"
+                title: "Nordic Collegiate Programming Contest 2013&14",
+                link: ""
             }
+        ]
+    };
+
+    contact: Contact = {
+        address: {
+            mail: "djpjgj [at] gmail.com",
+            phone: "SE 76 180 55 94",
+            web: "http://programmerper.com"
+        },
+        presence: [
+            {
+                title: "GitHub",
+                subtitle: "perjo927",
+                image: "github_logo.gif",
+                link: "",
+                textlist: []
+            },
+            {
+                title: "LinkedIn",
+                subtitle: "djpjgj",
+                image: "linkedin.png",
+                link: "",
+                textlist: []
+            },
+            {
+                title: "WordPress",
+                subtitle: "programmerper",
+                image: "wordpress.png",
+                link: "",
+                textlist: []
+            },
+            {
+                title: "Twitter",
+                subtitle: "programmerper",
+                image: "twitter.png",
+                link: "",
+                textlist: []
+            },
+            {
+                title: "SoundCloud",
+                subtitle: "djpjgj",
+                image: "soundcloud-logo.png",
+                link: "",
+                textlist: []
+            },
+            {
+                title: "Per's Web",
+                subtitle: "programmerper.com",
+                image: "p-logo.png",
+                link: "",
+                textlist: []
+            },
         ]
     };
 
@@ -294,46 +366,6 @@ export class Cv {
         }
     ];
 
-    contact: any = {
-        addresses: {
-            mail: "djpjgj [at] gmail.com",
-            phone: "SE 76 180 55 94",
-            web: "http://programmerper.com"
-        },
-        presence: [
-            {
-                title: "GitHub",
-                handle: "perjo927",
-                image: "github_logo.gif"
-            },
-            {
-                title: "LinkedIn",
-                handle: "djpjgj",
-                image: "linkedin.png"
-            },
-            {
-                title: "WordPress",
-                handle: "programmerper",
-                image: "wordpress.png"
-            },
-            {
-                title: "Twitter",
-                handle: "programmerper",
-                image: "twitter.png"
-            },
-            {
-                title: "SoundCloud",
-                handle: "djpjgj",
-                image: "soundcloud-logo.png"
-            },
-            {
-                title: "Per's Web",
-                handle: "programmerper.com",
-                image: "p-logo.png"
-            },
-        ]
-    };
-
     recommendations: any = [
         {
             title: "Betsson: Bjorg E",
@@ -344,7 +376,7 @@ export class Cv {
             text: "With his constructive way, Per has helped us to streamline the way we carry out follow-up work ... we give him excellent recommendations"
         },
         {
-            title: "Linkoping: Hannah B",
+            title: "Linkoping Uni: Hannah B",
             text: "Per is one of the most driven, hard-working and sharp person I have worked with."
         },
         {
@@ -353,6 +385,7 @@ export class Cv {
         }
     ];
 
+    // TODO : scroll into view
     constructor(private element: HTMLDivElement) {
         console.log("CV", this.element);
         // this.element.style.backgroundColor = 'red';
