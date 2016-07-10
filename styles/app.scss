@@ -1,14 +1,8 @@
-// TODO: Split up, refactor, use partials
+@import 'imports';
 
-@import 'theme';
-@import 'fonts';
-@import 'keyframes';
-@import 'placeholders';
-
-@import 'nav-bar';
-@import 'icon';
-@import 'home';
-@import 'cv';
+body {
+  background: $secondary_background_color;
+}
 
 h1 {
   font-size: 10px;

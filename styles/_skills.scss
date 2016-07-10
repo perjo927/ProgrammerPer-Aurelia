@@ -1,0 +1,12 @@
+table {
+  @extend %fonts_primary;
+  font-size: 8px;
+  
+  img {
+    width: 20px;
+    height: 20px;
+    border: none;
+    box-shadow: none;   
+    margin: 0;
+  }  
+}

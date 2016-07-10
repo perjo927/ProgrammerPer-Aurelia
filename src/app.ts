@@ -17,29 +17,28 @@ export class App {
       {
         route: ["per"],
         name: "per",
-        moduleId: "./per",
+        moduleId: "./cv",
         nav: true,
         title: "Per",
       },
       {
         route: ["portfolio"],
         name: "portfolio",
-        moduleId: "./portfolio",
+        moduleId: "./cv",
         nav: true,
         title: "Portfolio",
-
       },
       {
         route: ["social"],
         name: "social",
-        moduleId: "./social",
+        moduleId: "./cv",
         nav: true,
         title: "Social",
       },
       {
         route: ["skills"],
         name: "skills",
-        moduleId: "./skills",
+        moduleId: "./cv",
         nav: true,
         title: "Skills",
       },
