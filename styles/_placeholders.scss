@@ -29,3 +29,24 @@
 %fonts_secondary {
   font-family: $tertiary_font, $secondary_font;
 }
+
+%card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  
+  margin: 0.3em;
+  
+  width: 175px;
+  height: 175px;
+  
+  box-sizing: border-box;  
+    
+  text-align: center;
+  color: $quintiary_text_color;
+  font-size: 1.2em;
+
+  @extend %frame;
+  @extend %fonts_secondary;    
+  @extend %linear_gradient_top;  
+}

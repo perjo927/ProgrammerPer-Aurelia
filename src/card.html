@@ -2,8 +2,7 @@
     <img src.bind="'../static/' + item.image" />
     <h3>${item.title}</h3>
     <b>${item.subtitle}</b>
-    <br>    
-    <span repeat.for="a of item.textlist">
-        ${a}
+    <span repeat.for="t of item.textlist">
+        ${t}
     </span>
 </template>

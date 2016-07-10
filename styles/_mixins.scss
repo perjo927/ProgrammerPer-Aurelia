@@ -1,0 +1,17 @@
+@mixin card($size, $bg_color, $border_radius) {
+    @extend %card; 
+
+    img {       
+        height: $size;
+        width: $size;
+
+        margin: 10px auto;
+        padding: 0.2em;
+            
+        border-radius: $border_radius;  
+        border: transparent;
+        box-shadow: 0 1px 20px $secondary_accent_color;
+            
+        background: $bg_color;
+    }
+}

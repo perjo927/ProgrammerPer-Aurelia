@@ -1,0 +1,9 @@
+<template bindable="item">
+    <h5>${item.title}</h5>
+    <span repeat.for="t of item.textlist">
+        ${t}
+    </span>
+    <a href.bind="item.link" target="_blank">
+        <img src.bind="'../static/' + item.image">
+    </a>
+</template>

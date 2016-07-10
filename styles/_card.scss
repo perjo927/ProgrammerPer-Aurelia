@@ -1,36 +1,7 @@
-ul li {
-  // TODO: placeholder
-  list-style: none;
-    
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  
-  margin: 0.3em;
-  
-  width: 175px; height: 175px;
-  
-  box-sizing: border-box;  
-  @extend %frame;
-    
-  text-align: center;
-  color: $quintiary_text_color;
-  @extend %fonts_secondary;
-  font-size: 1.2em;
-    
-  @extend %linear_gradient_top;
-  
-  img {       
-    height: 33%;
-    width: 33%;
-    
-    margin: 10px auto;
-    padding: 0.2em;
-       
-    border-radius: 50%;  
-    border: transparent;
-    box-shadow: 0 1px 20px $secondary_accent_color;
-       
-    background: transparent;
-  }
+card {
+  @include card(33%, transparent, 50%);
+}
+
+card-inverse {
+  @include card(50%, white, 0);
 }

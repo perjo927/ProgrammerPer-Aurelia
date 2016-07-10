@@ -1,5 +1,10 @@
-import { ICard } from "./card";
+import { Card } from "./card";
+import { CardList } from "./card-list";
+import { Portfolio } from "./portfolio";
 
+import {autoinject} from "aurelia-framework";
+
+@autoinject
 export class Cv {
     title: string = "Programmer Per";
 
@@ -9,8 +14,7 @@ export class Cv {
 
     profile: string = "per.jpg";
 
-    // TODO: data interfaces
-    work: Array<ICard> = [
+    work: CardList = [
         {
             image: "betsson_logo.png",
             title: "Web Developer",
@@ -60,7 +64,7 @@ export class Cv {
         },
     ];
 
-    education: Array<ICard> = [
+    education: CardList = [
         {
             image: "vote_1.png",
             title: "Innovative Programming",
@@ -92,6 +96,104 @@ export class Cv {
             textlist: ["Linkoping University"]
         }
     ];
+
+    portfolio: Portfolio = {
+        projects: [
+            {
+                title: "This CV",
+                subtitle: "",
+                textlist: ["This app, made with Aurelia"],
+                image: "qr-pp-aurelia.png",
+                link: ""
+            },
+            {
+                title: "CSS Guidelines",
+                subtitle: "",
+                textlist: ["My CSS architecture philosophy"],
+                image: "qr-css.png",
+                link: ""
+            },
+            {
+                title: "CasinoMetropolMobile",
+                subtitle: "",
+                textlist: ["Casino site co-produced @Betsson"],
+                image: "qr-cmet.png",
+                link: "https://casino.casinometropolmobile.com/tr/#/"
+            },
+            {
+                title: "<3",
+                subtitle: "",
+                textlist: ["My own programmming language"],
+                image: "qr-three.png",
+                link: ""
+            },
+            {
+                title: "Ericsson Web Poll",
+                subtitle: "",
+                textlist: ["Web survey admin for Ericsson"],
+                image: "qr-eson-rec.png",
+                link: "../static/ericsson-rec.jpg"
+            },
+            {
+                title: "Angular2 & ASP.NET",
+                subtitle: "",
+                textlist: ["Research on Angular2/ASP.NET RC"],
+                image: "qr-ng2-aspnet.png",
+                link: ""
+            },
+            {
+                title: "Yellow D. Brewery",
+                subtitle: "",
+                textlist: ["Web site made for NKPG brewery"],
+                image: "qr-ydb.png",
+                link: ""
+            },
+            {
+                title: "hWorld",
+                subtitle: "",
+                textlist: ["Edu game improved for LiU"],
+                image: "qr-hworld.png",
+                link: ""
+            },
+            {
+                title: "East Sweden Hack",
+                subtitle: "",
+                textlist: ["Educational Quiz Hack"],
+                image: "qr-east-hack.png",
+                link: ""
+            },
+            {
+                title: "PREYBIRD.com",
+                subtitle: "",
+                textlist: ["My own music"],
+                image: "qr-preybird.png",
+                link: ""
+            },
+        ],
+
+        competitions: [
+            {
+                image: "money-conf-2016.png",
+                textlist: ["Winner: Open Source Contribution competition"],
+                emphasis: "Moneyconf 2016"
+            },
+            {
+                image: "web_summit_logo.jpeg",
+                textlist: ["Winner: Open Source Contribution competition"],
+                emphasis: "Web Summit 2016"
+            },
+            {
+                image: "east_hack.jpg",
+                textlist: ["Finalist: of"],
+                emphasis: "East Sweden Hack 2014"
+            },
+            {
+                image: "icpc_logo.png",
+                textlist: ["Participant: of"],
+                emphasis: "Nordic Collegiate Programming Contest 2013&14"
+            }
+        ]
+    };
 
     skills: any = [
         {
@@ -192,94 +294,6 @@ export class Cv {
         }
     ];
 
-    portfolio: any = {
-        projects: [
-            {
-                title: "This CV",
-                description: "This app, made with Aurelia",
-                image: "qr-pp-aurelia.png",
-                link: ""
-            },
-            {
-                title: "CSS Guidelines",
-                description: "My CSS architecture philosophy",
-                image: "qr-css.png",
-                link: ""
-            },
-            {
-                title: "CasinoMetropolMobile",
-                description: "Casino site co-produced @Betsson",
-                image: "qr-cmet.png",
-                link: "https://casino.casinometropolmobile.com/tr/#/"
-            },
-            {
-                title: "<3",
-                description: "My own programmming language",
-                image: "qr-three.png",
-                link: ""
-            },
-            {
-                title: "Ericsson Web Poll",
-                description: "Web survey admin for Ericsson",
-                image: "qr-eson-rec.png",
-                link: "../static/ericsson-rec.jpg"
-            },
-            {
-                title: "Angular2 & ASP.NET",
-                description: "Research on Angular2/ASP.NET RC",
-                image: "qr-ng2-aspnet.png",
-                link: ""
-            },
-            {
-                title: "Yellow D. Brewery",
-                description: "Web site made for NKPG brewery",
-                image: "qr-ydb.png",
-                link: ""
-            },
-            {
-                title: "hWorld",
-                description: "Edu game improved for LiU",
-                image: "qr-hworld.png",
-                link: ""
-            },
-            {
-                title: "East Sweden Hack",
-                description: "Educational Quiz Hack",
-                image: "qr-east-hack.png",
-                link: ""
-            },
-            {
-                title: "PREYBIRD.com",
-                description: "My own music",
-                image: "qr-preybird.png",
-                link: ""
-            },
-        ],
-
-        competitions: [
-            {
-                image: "money-conf-2016.png",
-                description: "Winner: Open Source Contribution competition",
-                emphasis: "Moneyconf 2016"
-            },
-            {
-                image: "web_summit_logo.jpeg",
-                description: "Winner: Open Source Contribution competition",
-                emphasis: "Web Summit 2016"
-            },
-            {
-                image: "east_hack.jpg",
-                description: "Finalist: of",
-                emphasis: "East Sweden Hack 2014"
-            },
-            {
-                image: "icpc_logo.png",
-                description: "Participant: of",
-                emphasis: "Nordic Collegiate Programming Contest 2013&14"
-            }
-        ]
-    };
-
     contact: any = {
         addresses: {
             mail: "djpjgj [at] gmail.com",
@@ -338,4 +352,11 @@ export class Cv {
             text: " I love Per's drive! ... He has a great approach to problem solving, finds creative solutions ... and is positive and fun to be with. "
         }
     ];
+
+    constructor(private element: HTMLDivElement) {
+        console.log("CV", this.element);
+        // this.element.style.backgroundColor = 'red';
+        // this.element.scrollIntoView(false);
+    }
+
 }

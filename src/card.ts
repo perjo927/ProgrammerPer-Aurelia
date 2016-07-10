@@ -5,6 +5,9 @@ export interface ICard {
     textlist: Array<string>;
 }
 
-export class Card {
-
+export class Card implements ICard {
+    image: string;
+    title: string;
+    subtitle: string;
+    textlist: Array<string>;
 }
