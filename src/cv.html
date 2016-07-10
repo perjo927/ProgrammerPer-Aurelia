@@ -3,6 +3,9 @@
     <require from="./work.html"></require>
     <require from="./skills.html"></require>
     <require from="./portfolio.html"></require>
+    <require from="./education.html"></require>
+    <require from="./contact.html"></require>
+    <require from="./recommendations.html"></require>
 
     <div class="ribbon">
         <div class="title">
@@ -19,82 +22,26 @@
         </div>
 
         <h2>About</h2>
-        <about id="#about"></about>      
+        <about id="about" profile.bind="profile"></about>
 
-        <h2>Work</h2>        
-        <work id="#work"></work>
+        <h2>Work</h2>
+        <work id="work" work.bind="work"></work>
 
         <h2>Skills</h2>
-        <skills id="#skills"></skills>
+        <skills id="skills" skills.bind="skills"></skills>
 
         <h2>Portfolio</h2>
-        <portfolio></portfolio>
+        <portfolio id="portfolio" portfolio.bind="portfolio"></portfolio>
 
         <h2>Education</h2>
-        <section>
-            <ul class="flex">
-                <li repeat.for="e of education">
-                    <img src.bind="'../static/' + e.image">
-                    <h3>${e.title}</h3>
-                    <b>${e.points}</b>${e.description}
-                </li>               
-            </ul>
-        </section>
+        <education id="education" education.bind="education"></education>
 
-        <h2>
-            Contact
-        </h2>
+        <h2>Contact</h2>
+        <contact id="contact" contact.bind="contact"></contact>        
 
-        <section>
-            <div class="contact">
-                <table>
-                    <thead></thead>
-                    <tbody>
-                        <tr>
-                            <!-- TODO: font awesome -->
-                            <td> * </td>
-                            <td>
-                                <h4>Mail: </h4>
-                            </td>
-                            <td>${contact.mail}</td>
-                            <td> * </td>
-                            <td>
-                                <h4>Phone: </h4>
-                            </td>
-                            <td>${contact.phone}</td>
-                            <td> * </td>
-                            <td>
-                                <h4>Web: </h4>
-                                <td>${contact.web}</td>
-                            </td>
-                        </tr>
-                    </tbody>
-                    <tfoot></tfoot>
-                </table>
-            </div>
+        <h2>Recommendations</h2>
+        <recommendations id="recommendations" recommendations.bind="recommendations">            
+        </recommendations>
 
-            <h5>
-                Web Presence
-            </h5>
-
-            <div class="flex flex-content">
-                <div class="list-item-alt" repeat.for="p of presence">
-                    ${p.title}: <b>${p.handle}</b>
-                    <img src.bind="'../static/' + p.image">
-                </div>
-            </div>
-        </section>
-
-        <h2>
-            Recommendations
-        </h2>
-        <section>
-            <div repeat.for="r of recommendations">
-                <h6>${r.title}</h6>
-                <blockquote>
-                    <b>"</b> ${r.text} <b>"</b>
-                </blockquote>
-            </div>
-        </section>
-        </div>
+    </div>
 </template>
