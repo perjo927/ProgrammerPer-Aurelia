@@ -26,7 +26,7 @@ p {
 
 pre {
   text-align: center;
-  color: $pre_color;
+  color: $primary_accent_color;
   text-shadow: 0 6px 12px $secondary_text_shadow_color;
 }
 
@@ -36,4 +36,14 @@ blockquote {
   color: $secondary_default_color;
   line-height: 0.4em;
   font-size: 0.8em;
+}
+
+ol {  
+  flex-wrap: wrap;
+}
+
+ol, ul {
+  list-style: none;
+  @extend %fonts_primary;
+  font-size: 8px; 
 }

@@ -1,4 +1,6 @@
 <template bindable="contact">
+    <require from="./card-mini-list.html"></require>
+
     <section>
         <div class="contact">
             <table>
@@ -10,16 +12,20 @@
                         <td>
                             <h4>Mail: </h4>
                         </td>
-                        <td>${contact.addresses.mail}</td>
+                        <td>${contact.address.mail}</td>
                         <td> * </td>
                         <td>
                             <h4>Phone: </h4>
                         </td>
-                        <td>${contact.addresses.phone}</td>
+                        <td>${contact.address.phone}</td>
                         <td> * </td>
                         <td>
                             <h4>Web: </h4>
-                            <td>${contact.addresses.web}</td>
+                            <td>
+                                <a href.bind="contact.address.web" target="_blank">
+                                   ${contact.address.web}
+                                </a>
+                            </td>
                         </td>
                     </tr>
                 </tbody>
@@ -27,13 +33,8 @@
             </table>
         </div>
 
-        <h5>Web Presence</h5>
-        <social></social>
-        <div class="flex flex-content">
-            <div class="list-item-alt" repeat.for="p of contact.presence">
-                ${p.title}: <b>${p.handle}</b>
-                <img src.bind="'../static/' + p.image">
-            </div>
-        </div>
+        <h5>Web Presence</h5>       
+        <card-mini-list info.bind="contact.presence" style.bind="'mini-card-inverse'">            
+        </card-mini-list>
     </section>
 </template>

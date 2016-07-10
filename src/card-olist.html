@@ -1,0 +1,9 @@
+<template bindable="info">
+    <require from="./card-inverse.html"></require>
+
+    <ol class="flex">
+        <li repeat.for="p of info.projects">
+            <card-inverse item.bind="p"></card-inverse>
+        </li>
+    </ol>
+</template>

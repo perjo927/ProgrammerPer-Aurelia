@@ -1,0 +1,9 @@
+<template bindable="info, style">
+    <require from="./card-mini.html"></require>
+
+    <div class="flex flex-content">
+        <div class="${style}" repeat.for="item of info">
+            <card-mini item.bind="item"></card-mini>            
+        </div>
+    </div>
+</template>

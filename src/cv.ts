@@ -1,3 +1,11 @@
+import { Card } from "./card";
+import { CardList } from "./card-list";
+import { Portfolio } from "./portfolio";
+import { Contact } from "./contact";
+
+import {autoinject} from "aurelia-framework";
+
+@autoinject
 export class Cv {
     title: string = "Programmer Per";
 
@@ -7,55 +15,257 @@ export class Cv {
 
     profile: string = "per.jpg";
 
-    work: any = [
+    work: CardList = [
         {
             image: "betsson_logo.png",
             title: "Web Developer",
-            year: "2015/16",
-            achievements: [
+            subtitle: "2015/16",
+            textlist: [
                 "Sportsbook",
                 "3 Mobile Web Sites",
                 "3 Desktop Web Sites"
-            ]
+            ],
+            link: ""
+
         },
         {
             image: "betsson_logo.png",
             title: "Trainee",
-            year: "2014",
-            achievements: [
+            subtitle: "2014",
+            textlist: [
                 "Scrum Dashboard",
                 "Live Casino Lobby Prototype",
                 "Game Management Tool"
-            ]
+            ],
+            link: ""
         },
         {
             image: "ericsson.png",
             title: "Ericsson",
-            year: "2014",
-            achievements: [
+            subtitle: "2014",
+            textlist: [
                 "Thesis: Web Surveys",
                 "Work Enviroment Web Poll App"
-            ]
+            ],
+            link: ""
         },
         {
             image: "liu_logo.png",
             title: "Linkoping Uni",
-            year: "2013/14",
-            achievements: [
+            subtitle: "2013/14",
+            textlist: [
                 "Programming Tutor",
                 "Web Course Provider"
-            ]
+            ],
+            link: ""
         },
         {
             image: "coderowl.png",
             title: "Coach",
-            year: "2013/14",
-            achievements: [
+            subtitle: "2013/14",
+            textlist: [
                 "CoderDojo NKPG",
                 "Programming Tutoring"
-            ]
+            ],
+            link: ""
         },
     ];
+
+    education: CardList = [
+        {
+            image: "vote_1.png",
+            title: "Innovative Programming",
+            subtitle: "120 hp",
+            textlist: ["Linkoping University BSc"],
+            link: ""
+        },
+        {
+            image: "c_logo.png",
+            title: "Information Retrieval",
+            subtitle: "15 hp",
+            textlist: ["Linkoping University"],
+            link: ""
+        },
+        {
+            image: "mupp.gif",
+            title: "Music Producer Programme",
+            subtitle: "150 hp",
+            textlist: ["Linkoping University BSc"],
+            link: ""
+        },
+        {
+            image: "liu_logo.png",
+            title: "Linguistic Science",
+            subtitle: "30 hp",
+            textlist: ["Linkoping University"],
+            link: ""
+        },
+        {
+            image: "liu_logo.png",
+            title: "Media & Communication",
+            subtitle: "30hp",
+            textlist: ["Linkoping University"],
+            link: ""
+        }
+    ];
+
+    portfolio: Portfolio = {
+        projects: [
+            {
+                title: "This CV",
+                subtitle: "",
+                textlist: ["This app, made with Aurelia"],
+                image: "qr-pp-aurelia.png",
+                link: ""
+            },
+            {
+                title: "CSS Guidelines",
+                subtitle: "",
+                textlist: ["My CSS architecture philosophy"],
+                image: "qr-css.png",
+                link: ""
+            },
+            {
+                title: "CasinoMetropolMobile",
+                subtitle: "",
+                textlist: ["Casino site co-produced @Betsson"],
+                image: "qr-cmet.png",
+                link: "https://casino.casinometropolmobile.com/tr/#/"
+            },
+            {
+                title: "<3",
+                subtitle: "",
+                textlist: ["My own programmming language"],
+                image: "qr-three.png",
+                link: ""
+            },
+            {
+                title: "Ericsson Web Poll",
+                subtitle: "",
+                textlist: ["Web survey admin for Ericsson"],
+                image: "qr-eson-rec.png",
+                link: "../static/ericsson-rec.jpg"
+            },
+            {
+                title: "Angular2 & ASP.NET",
+                subtitle: "",
+                textlist: ["Research on Angular2/ASP.NET RC"],
+                image: "qr-ng2-aspnet.png",
+                link: ""
+            },
+            {
+                title: "Yellow D. Brewery",
+                subtitle: "",
+                textlist: ["Web site made for NKPG brewery"],
+                image: "qr-ydb.png",
+                link: ""
+            },
+            {
+                title: "hWorld",
+                subtitle: "",
+                textlist: ["Edu game improved for LiU"],
+                image: "qr-hworld.png",
+                link: ""
+            },
+            {
+                title: "East Sweden Hack",
+                subtitle: "",
+                textlist: ["Educational Quiz Hack"],
+                image: "qr-east-hack.png",
+                link: ""
+            },
+            {
+                title: "PREYBIRD.com",
+                subtitle: "",
+                textlist: ["My own music"],
+                image: "qr-preybird.png",
+                link: ""
+            },
+        ],
+
+        competitions: [
+            {
+                image: "money-conf-2016.png",
+                subtitle: "",
+                textlist: ["Winner: Open Source Contribution competition"],
+                title: "Moneyconf 2016",
+                link: "https://moneyconf.com/"
+            },
+            {
+                image: "web_summit_logo.jpeg",
+                subtitle: "",
+                textlist: ["Winner: Open Source Contribution competition"],
+                title: "Web Summit 2016",
+                link: "https://websummit.net/"
+            },
+            {
+                image: "east_hack.jpg",
+                subtitle: "",
+                textlist: ["Finalist: of"],
+                title: "East Sweden Hack 2014",
+                link: "http://eastswedenhack.se/"
+            },
+            {
+                image: "icpc_logo.png",
+                subtitle: "",
+                textlist: ["Participant: of"],
+                title: "Nordic Collegiate Programming Contest 2013&14",
+                link: "https://ncpc.idi.ntnu.no/"
+            }
+        ]
+    };
+
+    contact: Contact = {
+        address: {
+            mail: "djpjgj [at] gmail.com",
+            phone: "SE 76 180 55 94",
+            web: "http://programmerper.com"
+        },
+        presence: [
+            {
+                title: "perjo927",
+                subtitle: "",
+                image: "github_logo.gif",
+                link: "https://github.com/perjo927",
+                textlist: ["GitHub: "]
+            },
+            {
+                title: "djpjgj",
+                subtitle: "",
+                image: "linkedin.png",
+                link: "https://www.linkedin.com/in/djpjgj",
+                textlist: ["LinkedIn: "]
+            },
+            {
+                title: "programmerper",
+                subtitle: "",
+                image: "wordpress.png",
+                link: "https://programmerper.wordpress.com/",
+                textlist: ["WordPress: "]
+            },
+            {
+                title: "programmerper",
+                subtitle: "",
+                image: "twitter.png",
+                link: "https://twitter.com/ProgrammerPer",
+                textlist: ["Twitter: "]
+            },
+            {
+                title: "djpjgj",
+                subtitle: "",
+                image: "soundcloud-logo.png",
+                link: "https://soundcloud.com/djpjgj",
+                textlist: ["SoundCloud: "]
+            },
+            {
+                title: "programmerper.com",
+                subtitle: "",
+                image: "p-logo.png",
+                link: "http://programmerper.com/",
+                textlist: ["Per's Web: "]
+            }
+        ]
+    };
 
     skills: any = [
         {
@@ -156,167 +366,6 @@ export class Cv {
         }
     ];
 
-    portfolio: any = {
-        projects: [
-            {
-                title: "This CV",
-                description: "This app, made with Aurelia",
-                image: "qr-pp-aurelia.png",
-                link: ""
-            },
-            {
-                title: "CSS Guidelines",
-                description: "My CSS architecture philosophy",
-                image: "qr-css.png",
-                link: ""
-            },
-            {
-                title: "CasinoMetropolMobile",
-                description: "Casino site co-produced @Betsson",
-                image: "qr-cmet.png",
-                link: "https://casino.casinometropolmobile.com/tr/#/"
-            },
-            {
-                title: "<3",
-                description: "My own programmming language",
-                image: "qr-three.png",
-                link: ""
-            },
-            {
-                title: "Ericsson Web Poll",
-                description: "Web survey admin for Ericsson",
-                image: "qr-eson-rec.png",
-                link: "../static/ericsson-rec.jpg"
-            },
-            {
-                title: "Angular2 & ASP.NET",
-                description: "Research on Angular2/ASP.NET RC",
-                image: "qr-ng2-aspnet.png",
-                link: ""
-            },
-            {
-                title: "Yellow D. Brewery",
-                description: "Web site made for NKPG brewery",
-                image: "qr-ydb.png",
-                link: ""
-            },
-            {
-                title: "hWorld",
-                description: "Edu game improved for LiU",
-                image: "qr-hworld.png",
-                link: ""
-            },
-            {
-                title: "East Sweden Hack",
-                description: "Educational Quiz Hack",
-                image: "qr-east-hack.png",
-                link: ""
-            },
-            {
-                title: "PREYBIRD.com",
-                description: "My own music",
-                image: "qr-preybird.png",
-                link: ""
-            },
-        ],
-
-        competitions: [
-            {
-                image: "money-conf-2016.png",
-                description: "Winner: Open Source Contribution competition",
-                emphasis: "Moneyconf 2016"
-            },
-            {
-                image: "web_summit_logo.jpeg",
-                description: "Winner: Open Source Contribution competition",
-                emphasis: "Web Summit 2016"
-            },
-            {
-                image: "east_hack.jpg",
-                description: "Finalist: of",
-                emphasis: "East Sweden Hack 2014"
-            },
-            {
-                image: "icpc_logo.png",
-                description: "Participant: of",
-                emphasis: "Nordic Collegiate Programming Contest 2013&14"
-            }
-        ]
-    };
-
-    education: any = [
-        {
-            image: "vote_1.png",
-            title: "Innovative Programming",
-            points: "120 hp",
-            description: "Linkoping University BSc"
-        },
-        {
-            image: "c_logo.png",
-            title: "Information Retrieval",
-            points: "15 hp",
-            description: "Linkoping University"
-        },
-        {
-            image: "mupp.gif",
-            title: "Music Producer Programme",
-            points: "150 hp",
-            description: "Linkoping University BSc"
-        },
-        {
-            image: "liu_logo.png",
-            title: "Linguistic Science",
-            points: "30 hp",
-            description: "Linkoping University"
-        },
-        {
-            image: "liu_logo.png",
-            title: "Media & Communication",
-            points: "30hp",
-            description: "Linkoping University"
-        }
-    ];
-
-    contact: any = {
-        addresses: {
-            mail: "djpjgj [at] gmail.com",
-            phone: "SE 76 180 55 94",
-            web: "http://programmerper.com"
-        },
-        presence: [
-            {
-                title: "GitHub",
-                handle: "perjo927",
-                image: "github_logo.gif"
-            },
-            {
-                title: "LinkedIn",
-                handle: "djpjgj",
-                image: "linkedin.png"
-            },
-            {
-                title: "WordPress",
-                handle: "programmerper",
-                image: "wordpress.png"
-            },
-            {
-                title: "Twitter",
-                handle: "programmerper",
-                image: "twitter.png"
-            },
-            {
-                title: "SoundCloud",
-                handle: "djpjgj",
-                image: "soundcloud-logo.png"
-            },
-            {
-                title: "Per's Web",
-                handle: "programmerper.com",
-                image: "p-logo.png"
-            },
-        ]
-    };
-
     recommendations: any = [
         {
             title: "Betsson: Bjorg E",
@@ -327,7 +376,7 @@ export class Cv {
             text: "With his constructive way, Per has helped us to streamline the way we carry out follow-up work ... we give him excellent recommendations"
         },
         {
-            title: "Linkoping: Hannah B",
+            title: "Linkoping Uni: Hannah B",
             text: "Per is one of the most driven, hard-working and sharp person I have worked with."
         },
         {
@@ -335,4 +384,12 @@ export class Cv {
             text: " I love Per's drive! ... He has a great approach to problem solving, finds creative solutions ... and is positive and fun to be with. "
         }
     ];
+
+    // TODO : scroll into view
+    constructor(private element: HTMLDivElement) {
+        console.log("CV", this.element);
+        // this.element.style.backgroundColor = 'red';
+        // this.element.scrollIntoView(false);
+    }
+
 }
