@@ -1,83 +1,25 @@
+.cv {
 
-.pulse {
-  -webkit-animation: pulsate 5s infinite; 
-  animation:         pulsate 5s infinite; 
-}
-
-section {
-  box-sizing: border-box;
-  width: 102%;
-  margin: -20px 0px -20px -10px;
-  padding: 15px 15px 5px 25px;
-  border: 10px solid $primary_border_color;  
- 
-  h5 {
-    text-align: center;
-  }
-  h6 {
-    font-size: 0.6em;
-    line-height: 0;
-  }
-  div, img {
-    margin: 1em;    
-  }  
-  img {
-    @extend %frame;    
-  }
-}
-
-.title {
-  box-sizing: border-box;
-  width: 102%;
-  margin: 0 0 -20px -10px;
-    
-  @extend %linear_gradient_top;  
-}
-
-.flex {  
-  display: flex;
-  flex-direction: row;    
-}
-
-.flex-content {
-  flex-wrap: nowrap;
-  justify-content: space-around;
-}
-
-.ribbon {
   position: relative;
-  
-  width: 1020px;
 
   margin: 20px;
   padding: 0 10px;
 
-  
+
   color: $primary_text_color;
   background: $primary_background_color;
-  
+
   border: 1px solid $secondary_shadow_color;
   border-radius: 3px;
   box-shadow: 0 1px 5px $primary_shadow_color;
-  
+
   h2 {
-    display: block;
-    
+
     height: 30px;
-    width: 1012px;
-    
+
     margin: 0;
     padding: 20px 20px;
-    
-    position: relative;
-    left: -16px;
-    top: 8px;
-    
-    border-top: 2px solid $quartiary_border_color;
-    border-bottom: 2px solid $quartiary_border_color;
-    border-radius: 2px 2px 0 0;
-    box-shadow: 0 2px 2px $secondary_shadow_color;
-    
+
     background: $tertiary_background_color;
     // TODO: Autoprefix
     background: -webkit-linear-gradient(left, $tertiary_gradient_color 0, $secondary_gradient_color 58%);
@@ -86,15 +28,29 @@ section {
     color: $heading_text_color;
     text-align: center;
     text-shadow: 0 0 6px $primary_text_shadow_color;
-    font-size: 1.2em;    
+    font-size: 1.2em;
   }
-  
-  h2::before {
-    @extend %ribbon_extension;
-    left: 0px;
+
+  section {
+    border: none;
+    box-sizing: border-box;
+    margin: 1em;
+    padding: 15px 15px 5px 25px;
+
+    p {
+      font-size: 0.8rem;
+    }
+
+    ol, ul {
+      //flex-wrap: wrap;
+
+      font-size: 0.7rem;
+    }
+
+
+    card {
+
+    }
   }
-  h2::after {
-    @extend %ribbon_extension;
-    right: 1px;
-  }
+
 }

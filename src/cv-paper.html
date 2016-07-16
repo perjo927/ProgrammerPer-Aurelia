@@ -8,18 +8,19 @@
     <require from="./recommendations.html"></require>
     <require from="./scroll-into-view"></require>
 
-    <div class="cv">
-        <h1>
-            <pre class="pulse">
+    <div class="ribbon">
+        <div class="title">
+            <h1>
+                <pre class="pulse">
         ______   ______     ______          __     ______     __   __     ______     ______     ______     __   __       
        /\  == \ /\  ___\   /\  == \        /\ \   /\  __ \   /\ "-.\ \   /\  ___\   /\  ___\   /\  __ \   /\ "-.\ \      
        \ \  _-/ \ \  __\   \ \  __<       _\_\ \  \ \ \/\ \  \ \ \-.  \  \ \___  \  \ \___  \  \ \ \/\ \  \ \ \-.  \     
         \ \_\    \ \_____\  \ \_\ \_\    /\_____\  \ \_____\  \ \_\\"\_\  \/\_____\  \/\_____\  \ \_____\  \ \_\\"\_\    
          \/_/     \/_____/   \/_/ /_/    \/_____/   \/_____/   \/_/ \/_/   \/_____/   \/_____/   \/_____/   \/_/ \/_/    
 
-            </pre>
-        </h1>
-
+                </pre>  
+            </h1>
+        </div>
 
         <h2>About</h2>
         <about id="about" profile.bind="profile"></about>
@@ -39,10 +40,10 @@
         </education>
 
         <h2>Contact</h2>
-        <contact id="contact" contact.bind="contact"></contact>
+        <contact id="contact" contact.bind="contact"></contact>        
 
         <h2>Recommendations</h2>
-        <recommendations id="recommendations" recommendations.bind="recommendations">
+        <recommendations id="recommendations" recommendations.bind="recommendations">            
         </recommendations>
     </div>
 </template>

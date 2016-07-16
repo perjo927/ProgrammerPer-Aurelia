@@ -59,7 +59,7 @@ export class App {
       {
         route: ["cv"],
         name: "cv",
-        moduleId: "./cv",
+        moduleId: "./cv-paper",
         nav: true,
         title: "Cv",
       },
