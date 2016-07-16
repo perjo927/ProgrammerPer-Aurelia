@@ -3,7 +3,7 @@ import { CardList } from "./card-list";
 import { Portfolio } from "./portfolio";
 import { Contact } from "./contact";
 
-export class Cv {
+export class CvPaper {
     title: string = "Programmer Per";
 
     // TODO: Markdown plugin

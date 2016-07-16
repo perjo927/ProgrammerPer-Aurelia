@@ -28,3 +28,13 @@
         border: none;
     }
 }
+
+@mixin card_responsive($size, $bg_color, $border_radius) {
+    @extend %card_responsive;
+    @include card($size, $bg_color, $border_radius)
+}
+
+@mixin mini_card_responsive($width, $height, $background) {
+    @extend %mini_card_responsive;
+    @include mini_card($width, $height, $background)
+}

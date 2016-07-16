@@ -59,6 +59,39 @@
   
   width: 120px;
   height: 120px;
-  
+
+  text-align: center;
+}
+
+
+
+%card_responsive {
+  @extend %card;
+
+  @include phone {
+    margin: 0.2em;
+  }
+
+  @include tablet {
+    margin: 0.5em;
+  }
+
+  @include desktop {
+    margin: 1em;
+  }
+
+  width: 250px;
+  height: 250px;
+}
+
+%mini_card_responsive {
+  @extend %fonts_secondary;
+  font-size: 11px;
+
+  border: none;
+
+  width: 175px;
+  height: 175px;
+
   text-align: center;
 }

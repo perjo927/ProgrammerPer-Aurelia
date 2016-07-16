@@ -11,9 +11,10 @@ nav {
     transition: font-weight 0.67s ease, opacity 0.67s ease;
     display: flex;
     align-items: flex-start;
-    padding: 1.25rem 0.5rem;
+    padding: 1.25rem 0.25rem;
     font-weight: bold;
     text-decoration: none;
+    letter-spacing: -0.1rem;
     opacity: 0.6;
 
     color: $secondary_accent_color;
