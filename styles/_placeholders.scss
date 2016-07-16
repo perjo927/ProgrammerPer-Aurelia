@@ -59,45 +59,18 @@
   
   width: 120px;
   height: 120px;
-  
+
   text-align: center;
 }
 
-// TODO
-$phone-width: 640px;
-$tablet-width: 768px;
-$desktop-width: 1024px;
-
-@mixin phone {
-  @media (min-width: #{$phone-width}) and (max-width: #{$table-width - 1px}) {
-    @content;
-  }
-}
-
-
-@mixin tablet {
-  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
-    @content;
-  }
-}
-
-@mixin desktop {
-  @media (min-width: #{$desktop-width}) {
-    @content;
-  }
-}
 
 
 %card_responsive {
-
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  @extend %card;
 
   @include phone {
     margin: 0.2em;
   }
-
 
   @include tablet {
     margin: 0.5em;
@@ -107,28 +80,18 @@ $desktop-width: 1024px;
     margin: 1em;
   }
 
-  width: 175px;
-  height: 175px;
-
-  box-sizing: border-box;
-
-  text-align: center;
-  color: $quintiary_text_color;
-  font-size: 1.2em;
-
-  @extend %frame;
-  @extend %fonts_secondary;
-  @extend %linear_gradient_top;
+  width: 250px;
+  height: 250px;
 }
 
 %mini_card_responsive {
   @extend %fonts_secondary;
-  font-size: 8px;
+  font-size: 11px;
 
   border: none;
 
-  width: 120px;
-  height: 120px;
+  width: 175px;
+  height: 175px;
 
   text-align: center;
 }
