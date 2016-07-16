@@ -389,10 +389,9 @@ export class Cv {
         this.myName = routeConfig.name;
     }
 
-    // Use custom attribute and/or Aurelia DOM Element injection
+    // TODO: Use custom attribute and/or Aurelia DOM Element injection
     attached() {
         this.myElement = document.querySelectorAll(this.myName)[0];
-        console.log(this.myElement);
         this.myElement.scrollIntoView();
     }
 }
