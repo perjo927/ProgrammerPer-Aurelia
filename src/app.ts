@@ -22,6 +22,20 @@ export class App {
         title: "Per",
       },
       {
+        route: ["work"],
+        name: "work",
+        moduleId: "./cv",
+        nav: true,
+        title: "Work",
+      },
+      {
+        route: ["skills"],
+        name: "skills",
+        moduleId: "./cv",
+        nav: true,
+        title: "Skills",
+      },
+      {
         route: ["portfolio"],
         name: "portfolio",
         moduleId: "./cv",
@@ -36,28 +50,36 @@ export class App {
         title: "Social",
       },
       {
-        route: ["skills"],
-        name: "skills",
-        moduleId: "./cv",
-        nav: true,
-        title: "Skills",
-      },
-      {
-        route: ["cv"],
-        name: "recommendations",
-        moduleId: "./cv",
-        nav: true,
-        title: "Cv",
-      },
-      {
         route: ["blog"],
         name: "blog",
         moduleId: "./blog",
         nav: true,
         title: "Blog",
-      }
+      },
+      {
+        route: ["cv"],
+        name: "cv",
+        moduleId: "./cv-paper",
+        nav: true,
+        title: "Cv",
+      },
     ]);
 
     this.router = router;
+  }
+
+  // TODO: Use custom attribute and/or Aurelia DOM Element injection
+  scroll(row) {
+    let name = row.config.name;
+
+    this.router.navigateToRoute(name);
+
+    let element = document.querySelectorAll(name)[0];
+    if (!!element) {
+      element.scrollIntoView();
+      // {
+      //   behavior: "smooth"
+      // });
+    }
   }
 }
