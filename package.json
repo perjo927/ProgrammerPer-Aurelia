@@ -60,7 +60,8 @@
   "homepage": "http://www.programmerper.com",
   "aurelia": {
     "build": {
-      "resources": []
+      "resources": [
+      ]
     }
   },
   "dependencies": {

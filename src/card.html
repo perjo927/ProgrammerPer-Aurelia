@@ -1,5 +1,5 @@
 <template bindable="item">
-    <img src.bind="'../static/' + item.image" />
+    <img src.bind="item.image" />
     <h3>${item.title}</h3>
     <b>${item.subtitle}</b>
     <span repeat.for="t of item.textlist">

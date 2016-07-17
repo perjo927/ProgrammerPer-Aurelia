@@ -59,6 +59,10 @@ section {
   border: 1px solid $secondary_shadow_color;
   border-radius: 3px;
   box-shadow: 0 1px 5px $primary_shadow_color;
+
+  table {
+    padding-left: 20%;
+  }
   
   h2 {
     display: block;

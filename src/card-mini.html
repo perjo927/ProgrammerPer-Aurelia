@@ -1,6 +1,6 @@
 <template bindable="item">
     <a href.bind="item.link" target="_blank">
-        <img src.bind="'../static/' + item.image">
+        <img src.bind="item.image">
     </a>
     <!-- TODO: Markdown -->
     <span repeat.for="t of item.textlist">${t}</span> <b>${item.title}</b>
