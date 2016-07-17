@@ -1,13 +1,13 @@
 <template bindable="skills">
     <section class="flex flex-content">
-        <div repeat.for="s of skills">
+        <div repeat.for="s of skills.lists">
             <table>
                 <thead></thead>
                 <tbody>
                     <tr repeat.for="l of s.list">
                         <td>${l.skill}</td>
                         <td repeat.for="i of l.level">
-                            <img src.bind="'../static/ghost_' + l.level +'.gif'" />
+                            <img src.bind="skills.images[l.level-1]" />
                         </td>
                     </tr>
                 </tbody>
