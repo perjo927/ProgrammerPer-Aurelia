@@ -8,7 +8,7 @@
     p {
         animation-name: fadein;
         animation-duration: 10s;
-        padding: 0 4rem;
+        padding: 0 3rem;
         color: $quintiary_text_color;
         font-size: 0.8em;
     }
@@ -45,13 +45,18 @@
 }
 
 .youtube {
-    margin-top: 0.5em;
+    margin-left: 5%;
+    margin-top: 2em;
     width: 99%;
     border: none;
 
     iframe {
-        width: 100%;
+        width: 80%;
         height: 500px;
         height: 50vh;
+
+        border-radius: 2px;
+        box-shadow: 0 0 30px $console_color;
+
     }
 }
