@@ -60,7 +60,7 @@ nav {
 
 
 /* Media */
-@media(min-width: 701px) {
+@include tablet_and_up {
   nav {
     animation-duration: 3s;
     animation-name: slidein;
@@ -71,7 +71,7 @@ nav {
   }
 }
 
-@media(max-width: 700px) {
+@include tablet_and_down {
 
   nav {
     overflow: hidden;
@@ -117,7 +117,7 @@ nav {
     border-right: 5px dotted $secondary_accent_color;
   }
 }
-
+/* */
 
 ul.nav-item li {
   display: flex;

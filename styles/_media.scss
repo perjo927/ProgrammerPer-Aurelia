@@ -16,6 +16,18 @@ $desktop-width: 1024px;
 }
 
 @mixin tablet_and_down {
+  @media (max-width: #{$tablet-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet_and_up {
+  @media (min-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin desktop_and_down {
   @media (max-width: #{$desktop-width - 1px}) {
     @content;
   }
