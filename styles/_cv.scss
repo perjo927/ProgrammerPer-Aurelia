@@ -9,7 +9,7 @@
   border-radius: 3px;
 
   table {
-    @include tablet_and_down {
+    @include desktop_and_down {
       table, thead, tbody, th, td, tr {
         display: block;
       }
