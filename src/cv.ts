@@ -115,14 +115,14 @@ export class Cv {
                 subtitle: "",
                 textlist: ["This app, made with Aurelia"],
                 image: require("../static/qr-pp-aurelia.png"),
-                link: ""
+                link: "https://github.com/perjo927/ProgrammerPer-Aurelia"
             },
             {
                 title: "CSS Guidelines",
                 subtitle: "",
                 textlist: ["My CSS architecture philosophy"],
                 image: require("../static/qr-css.png"),
-                link: ""
+                link: "https://programmerper.wordpress.com/2016/05/21/approaching-css/"
             },
             {
                 title: "CasinoMetropolMobile",
@@ -136,7 +136,7 @@ export class Cv {
                 subtitle: "",
                 textlist: ["My own programmming language"],
                 image: require("../static/qr-three.png"),
-                link: ""
+                link: "https://github.com/perjo927/LessThanThree"
             },
             {
                 title: "Ericsson Web Poll",
@@ -150,35 +150,35 @@ export class Cv {
                 subtitle: "",
                 textlist: ["Research on Angular2/ASP.NET RC"],
                 image: require("../static/qr-ng2-aspnet.png"),
-                link: ""
+                link: "https://github.com/perjo927/angular2-preybird"
             },
             {
                 title: "Yellow D. Brewery",
                 subtitle: "",
                 textlist: ["Web site made for NKPG brewery"],
                 image: require("../static/qr-ydb.png"),
-                link: ""
+                link: "https://ydb.herokuapp.com/"
             },
             {
                 title: "hWorld",
                 subtitle: "",
                 textlist: ["Edu game improved for LiU"],
                 image: require("../static/qr-hworld.png"),
-                link: ""
+                link: "https://github.com/perjo927/hWorld"
             },
             {
                 title: "East Sweden Hack",
                 subtitle: "",
                 textlist: ["Educational Quiz Hack"],
                 image: require("../static/qr-east-hack.png"),
-                link: ""
+                link: "http://eastswedenhack.se/"
             },
             {
                 title: "PREYBIRD.com",
                 subtitle: "",
                 textlist: ["My own music"],
                 image: require("../static/qr-preybird.png"),
-                link: ""
+                link: "http://preybird.com/"
             }
         ],
 
