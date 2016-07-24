@@ -20,6 +20,18 @@
         padding-left: 49%;
       }
     }
+    @include tablet_and_down {
+      font-size: 5px;
+
+      td {
+        padding: 0;
+
+        img {
+          width: 13px;
+          height: 13px;
+        }
+      }
+    }
   }
 
   h2 {
