@@ -11,6 +11,12 @@
         padding: 0 3rem;
         color: $quintiary_text_color;
         font-size: 0.8em;
+
+        @include tablet_and_down {
+             padding: 0 1rem;
+            font-size: 0.5em;         
+        }
+
     }
 
     a {
@@ -25,6 +31,10 @@
         text-shadow: 0.5rem 0.2rem 2.5rem $material_dark_green;
         color: $material_medium_green;
         margin-left: 1em;
+
+        @include tablet_and_down {        
+            font-size: 0.6em;         
+        }
     }
 
     .type-text {

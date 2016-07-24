@@ -2,3 +2,32 @@
   height: 250px;
   min-width: 200px;
 }
+
+
+@include tablet {
+  .cv {
+    about {
+      section {
+        flex-wrap: wrap-reverse;
+      }
+      p {
+        font-size: 0.6rem;
+        margin: 0;
+      }
+    }
+  }
+}
+
+@include tablet_and_down {
+  .cv {
+    about {
+      section {
+        flex-wrap: wrap-reverse;
+      }
+      p {
+        font-size: 0.5rem;
+        margin: 0;
+      }
+    }
+  }
+}
