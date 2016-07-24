@@ -68,8 +68,22 @@
 %card_responsive {
   @extend %card;
 
+  width: 250px;
+  height: 250px;
+
   @include phone {
+
+  }
+
+  @include tablet_and_down {
     margin: 0.2em;
+
+    width: 200px;
+    height: 200px;
+
+    h3 {
+      font-size: 0.8em;
+    }
   }
 
   @include tablet {
@@ -79,9 +93,6 @@
   @include desktop {
     margin: 1em;
   }
-
-  width: 250px;
-  height: 250px;
 }
 
 %mini_card_responsive {

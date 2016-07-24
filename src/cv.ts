@@ -218,7 +218,7 @@ export class Cv {
         address: {
             mail: "djpjgj [at] gmail.com",
             phone: "SE 76 180 55 94",
-            web: "http://programmerper.com"
+            web: "http://www.programmerper.com"
         },
         presence: [
             {

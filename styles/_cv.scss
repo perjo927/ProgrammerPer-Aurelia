@@ -20,6 +20,18 @@
         padding-left: 49%;
       }
     }
+    @include tablet_and_down {
+      font-size: 5px;
+
+      td {
+        padding: 0;
+
+        img {
+          width: 13px;
+          height: 13px;
+        }
+      }
+    }
   }
 
   h2 {
@@ -35,6 +47,10 @@
     text-align: center;
     text-shadow: 0 0 6px $primary_text_shadow_color;
     font-size: 1.4em;
+
+    @include tablet_and_down {
+        font-size: 1.1em;
+    }
   }
 
   section {
@@ -42,14 +58,21 @@
     margin: 1em;
     width: 100%;
 
+    @include tablet_and_down {
+      margin: 0;
+    }
+
     p {
       font-size: 0.8rem;
     }
 
     ol, ul {
       flex-wrap: wrap;
-
       font-size: 0.7rem;
+
+       @include tablet_and_down {
+         font-size: 0.5rem;
+       }
     }
 
     card {

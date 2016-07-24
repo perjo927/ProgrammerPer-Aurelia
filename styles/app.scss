@@ -28,6 +28,10 @@ pre {
   text-align: center;
   color: $primary_accent_color;
   text-shadow: 0 6px 12px $secondary_text_shadow_color;
+
+  @include tablet_and_down {
+    font-size: 0.4em;
+  }
 }
 
 blockquote {

@@ -71,6 +71,12 @@ nav {
   }
 }
 
+@include tablet {
+  nav span {
+    font-size: 0.8rem;
+  }
+}
+
 @include tablet_and_down {
 
   nav {
