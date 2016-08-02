@@ -217,7 +217,7 @@ export class Cv {
     contact: Contact = {
         address: {
             mail: "djpjgj [at] gmail.com",
-            phone: "SE 76 180 55 94",
+            phone: "0046 ASK-ME",
             web: "http://www.programmerper.com"
         },
         presence: [
